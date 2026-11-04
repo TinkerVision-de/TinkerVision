@@ -3,13 +3,14 @@ on:
   schedule:
     - cron: "17 6 * * *"
   workflow_dispatch:
-permissions:
-  contents: write
+permissions: {}
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - name: Summe schreiben
         env:
           CULTS_API_KEY: ${{ secrets.CULTS_API_KEY }}
