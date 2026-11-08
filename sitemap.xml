@@ -1,9 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tinkervision.de/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://tinkervision.de/leistungen.html</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://tinkervision.de/netzlehre.html</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://tinkervision.de/spezial.html</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://tinkervision.de/non-ittf.html</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://tinkervision.de/kontakt.html</loc><lastmod>2026-11-05</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tinkervision.de/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/leistungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/leistungen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/leistungen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/leistungen.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/leistungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/leistungen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/leistungen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/leistungen.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/spezial.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/spezial.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/spezial.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/spezial.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/spezial.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/spezial.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/spezial.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/spezial.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/netzlehre.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/netzlehre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/netzlehre.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/netzlehre.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/netzlehre.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/netzlehre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/netzlehre.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/netzlehre.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/kontakt.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/kontakt.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/agb.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/agb.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/agb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/agb.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/agb.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/agb.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/agb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/agb.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/datenschutz.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/datenschutz.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/impressum.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/impressum.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/widerruf.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/widerruf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/widerruf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/widerruf.html"/>
+  </url>
+  <url>
+    <loc>https://tinkervision.de/en/widerruf.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tinkervision.de/widerruf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tinkervision.de/en/widerruf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tinkervision.de/widerruf.html"/>
+  </url>
 </urlset>

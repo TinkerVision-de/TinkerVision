@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script>(function(){var t;try{t=localStorage.getItem("tv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projekte und Referenzen – TinkerVision</title>
+  <meta name="description" content="Ausgewählte Projekte von TinkerVision: Aufgabe, Lösung und Ergebnis aus Konstruktion, 3D-Scan und 3D-Druck.">
+  <!-- AUSBLENDEN BIS BEFÜLLT: Diese Zeile löschen, sobald echte Projekte eingetragen sind.
+       Dann auch den Link auf der Startseite einkommentieren und die Seite in sitemap.xml aufnehmen. -->
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ececf1">
+  <link rel="stylesheet" href="site.css">
+  <link rel="preload" href="fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/orbitron-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TinkerVision">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:title" content="Projekte und Referenzen – TinkerVision">
+  <meta property="og:description" content="Ausgewählte Projekte von TinkerVision: Aufgabe, Lösung und Ergebnis aus Konstruktion, 3D-Scan und 3D-Druck.">
+  <meta property="og:url" content="https://tinkervision.de/projekte.html">
+  <meta property="og:image" content="https://tinkervision.de/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TinkerVision – Idee wird Geometrie. 3D-Scan, CAD-Konstruktion, FEM-Analyse">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://tinkervision.de/projekte.html">
+  <link rel="alternate" hreflang="de" href="https://tinkervision.de/projekte.html" data-path="projekte.html">
+  <link rel="alternate" hreflang="en" href="https://tinkervision.de/en/projekte.html" data-path="en/projekte.html">
+  <link rel="alternate" hreflang="x-default" href="https://tinkervision.de/projekte.html" data-path="projekte.html">
+  <link rel="icon" href="favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <style>
+    :root { --accent: #2f4a63; }
+    html[data-theme="dark"] { --accent: #8aa0b8; }
+    .top { width:min(560px, calc(100% - 28px)); display:flex; justify-content:space-between; align-items:center; padding:16px 0 0; }
+    main { width:min(560px, calc(100% - 28px)); margin:14px auto 28px; background:var(--card); border:1px solid var(--card-border); border-radius:28px; padding:28px 22px 22px; box-shadow:0 24px 50px var(--shadow); }
+    @media (min-width:900px) { .top, main { width:min(760px, calc(100% - 48px)); } }
+    .brand { font-family:Orbitron,sans-serif; font-size:1.5rem; letter-spacing:.24em; font-weight:700; margin:0 0 10px; text-align:center; }
+    h1 { font-family:Orbitron,sans-serif; font-size:.95rem; letter-spacing:.12em; margin:0; text-align:center; }
+    .rule { width:28px; height:2px; background:var(--ink); margin:14px auto 18px; opacity:.22; border-radius:2px; }
+    .lead { color:var(--muted); text-align:center; margin:0 0 20px; font-size:.95rem; }
+    .grid { display:grid; gap:16px; }
+    @media (min-width:900px) { .grid { grid-template-columns:1fr 1fr; } }
+    .project { background:var(--card-solid); border:1px solid var(--line); border-top:3px solid var(--accent); border-radius:18px; overflow:hidden; display:flex; flex-direction:column; }
+    .project img { display:block; width:100%; height:auto; aspect-ratio:4 / 3; object-fit:cover; background:var(--placeholder); }
+    .project .body { padding:14px 16px 16px; }
+    .tags { margin:0 0 6px; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:600; }
+    .project h2 { font-size:1.05rem; margin:0 0 10px; }
+    .project dl { margin:0; display:grid; grid-template-columns:auto 1fr; gap:6px 12px; font-size:.86rem; }
+    .project dt { color:var(--muted); font-weight:600; }
+    .project dd { margin:0; }
+    .cta { margin:22px 0 0; text-align:center; }
+    .cta a { display:inline-block; background:var(--ink); color:var(--on-ink); text-decoration:none; font-weight:600; padding:12px 22px; border-radius:12px; }
+    footer { margin-top:auto; padding:8px 16px 28px; color:var(--muted); font-size:.75rem; display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <a class="back" href="index.html" data-i18n="back">← Zurück</a>
+    <div class="tools">
+      <label class="ios-switch"><input type="checkbox" data-theme-toggle aria-label="Dunkles Design umschalten"><span class="ios-slider"></span></label>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <p class="brand">TinkerVision</p>
+    <h1 data-i18n="title">Projekte</h1>
+    <div class="rule"></div>
+    <p class="lead" data-i18n="lead">Eine Auswahl abgeschlossener Arbeiten – von der Aufgabe bis zum fertigen Teil.</p>
+
+    <!--
+      SO BEFÜLLST DU EIN PROJEKT
+      1. Foto in den Ordner projekte/ legen (am besten 1200 × 900 px, JPG oder WebP, unter 300 KB).
+      2. Im <img> unten src und alt anpassen (alt = kurz beschreiben, was zu sehen ist).
+      3. Deutsche Texte direkt hier im HTML ersetzen.
+      4. Englische Texte unten im Skript unter "en:" mit denselben Schlüsseln (p1t, p1a …) eintragen.
+      Für ein weiteres Projekt einen <article>-Block kopieren und die Nummern hochzählen (p5t, p5a …).
+      Nicht benötigte Blöcke einfach löschen – dann auch die Schlüssel im Skript.
+    -->
+    <div class="grid">
+      <article class="project" id="p1">
+        <img src="projekte/platzhalter.svg" alt="Platzhalter – Foto folgt" width="800" height="600" loading="lazy">
+        <div class="body">
+          <p class="tags" data-i18n="p1tags">3D-Scan · CAD</p>
+          <h2 data-i18n="p1t">[Projekt 1: Titel]</h2>
+          <dl>
+            <dt data-i18n="lblTask">Aufgabe</dt><dd data-i18n="p1a">[Was war das Problem bzw. der Wunsch des Kunden?]</dd>
+            <dt data-i18n="lblSolution">Lösung</dt><dd data-i18n="p1l">[Wie bist du vorgegangen – Scan, Konstruktion, Material?]</dd>
+            <dt data-i18n="lblResult">Ergebnis</dt><dd data-i18n="p1e">[Was kam heraus – Passgenauigkeit, Zeit, Kosten?]</dd>
+          </dl>
+        </div>
+      </article>
+      <article class="project" id="p2">
+        <img src="projekte/platzhalter.svg" alt="Platzhalter – Foto folgt" width="800" height="600" loading="lazy">
+        <div class="body">
+          <p class="tags" data-i18n="p2tags">CAD · FEM</p>
+          <h2 data-i18n="p2t">[Projekt 2: Titel]</h2>
+          <dl>
+            <dt data-i18n="lblTask">Aufgabe</dt><dd data-i18n="p2a">[Aufgabe]</dd>
+            <dt data-i18n="lblSolution">Lösung</dt><dd data-i18n="p2l">[Lösung]</dd>
+            <dt data-i18n="lblResult">Ergebnis</dt><dd data-i18n="p2e">[Ergebnis]</dd>
+          </dl>
+        </div>
+      </article>
+      <article class="project" id="p3">
+        <img src="projekte/platzhalter.svg" alt="Platzhalter – Foto folgt" width="800" height="600" loading="lazy">
+        <div class="body">
+          <p class="tags" data-i18n="p3tags">Ersatzteil · 3D-Druck</p>
+          <h2 data-i18n="p3t">[Projekt 3: Titel]</h2>
+          <dl>
+            <dt data-i18n="lblTask">Aufgabe</dt><dd data-i18n="p3a">[Aufgabe]</dd>
+            <dt data-i18n="lblSolution">Lösung</dt><dd data-i18n="p3l">[Lösung]</dd>
+            <dt data-i18n="lblResult">Ergebnis</dt><dd data-i18n="p3e">[Ergebnis]</dd>
+          </dl>
+        </div>
+      </article>
+      <article class="project" id="p4">
+        <img src="projekte/platzhalter.svg" alt="Platzhalter – Foto folgt" width="800" height="600" loading="lazy">
+        <div class="body">
+          <p class="tags" data-i18n="p4tags">Prototyp</p>
+          <h2 data-i18n="p4t">[Projekt 4: Titel]</h2>
+          <dl>
+            <dt data-i18n="lblTask">Aufgabe</dt><dd data-i18n="p4a">[Aufgabe]</dd>
+            <dt data-i18n="lblSolution">Lösung</dt><dd data-i18n="p4l">[Lösung]</dd>
+            <dt data-i18n="lblResult">Ergebnis</dt><dd data-i18n="p4e">[Ergebnis]</dd>
+          </dl>
+        </div>
+      </article>
+    </div>
+
+    <p class="cta"><a href="kontakt.html" data-i18n="cta">Eigenes Projekt anfragen</a></p>
+  </main>
+  <footer>
+    <span>© 2026 TinkerVision</span>
+    <a href="impressum.html" data-i18n="imprint">Impressum</a>
+    <a href="datenschutz.html" data-i18n="privacy">Datenschutz</a>
+    <a href="agb.html" data-i18n="agb">AGB</a>
+    <a href="widerruf.html" data-i18n="widerruf">Widerruf</a>
+  </footer>
+  <script src="site.js"></script>
+  <script>
+    const T = {
+      de: {
+        back: "← Zurück", title: "Projekte",
+        lead: "Eine Auswahl abgeschlossener Arbeiten – von der Aufgabe bis zum fertigen Teil.",
+        lblTask: "Aufgabe", lblSolution: "Lösung", lblResult: "Ergebnis",
+        p1tags: "3D-Scan · CAD", p1t: "[Projekt 1: Titel]",
+        p1a: "[Was war das Problem bzw. der Wunsch des Kunden?]",
+        p1l: "[Wie bist du vorgegangen – Scan, Konstruktion, Material?]",
+        p1e: "[Was kam heraus – Passgenauigkeit, Zeit, Kosten?]",
+        p2tags: "CAD · FEM", p2t: "[Projekt 2: Titel]", p2a: "[Aufgabe]", p2l: "[Lösung]", p2e: "[Ergebnis]",
+        p3tags: "Ersatzteil · 3D-Druck", p3t: "[Projekt 3: Titel]", p3a: "[Aufgabe]", p3l: "[Lösung]", p3e: "[Ergebnis]",
+        p4tags: "Prototyp", p4t: "[Projekt 4: Titel]", p4a: "[Aufgabe]", p4l: "[Lösung]", p4e: "[Ergebnis]",
+        cta: "Eigenes Projekt anfragen",
+        imprint: "Impressum", privacy: "Datenschutz", agb: "AGB", widerruf: "Widerruf"
+      },
+      en: {
+        back: "← Back", title: "Projects",
+        lead: "A selection of finished work – from the brief to the finished part.",
+        lblTask: "Brief", lblSolution: "Solution", lblResult: "Result",
+        p1tags: "3D scan · CAD", p1t: "[Project 1: title]",
+        p1a: "[What was the customer's problem or request?]",
+        p1l: "[How did you approach it – scan, design, material?]",
+        p1e: "[What was the outcome – fit, time, cost?]",
+        p2tags: "CAD · FEA", p2t: "[Project 2: title]", p2a: "[Brief]", p2l: "[Solution]", p2e: "[Result]",
+        p3tags: "Spare part · 3D printing", p3t: "[Project 3: title]", p3a: "[Brief]", p3l: "[Solution]", p3e: "[Result]",
+        p4tags: "Prototype", p4t: "[Project 4: title]", p4a: "[Brief]", p4l: "[Solution]", p4e: "[Result]",
+        cta: "Request your own project",
+        imprint: "Imprint", privacy: "Privacy", agb: "Terms", widerruf: "Withdrawal"
+      }
+    };
+    function applyLang(lang) {
+      TV.setLang(T, lang);
+    }
+    applyLang(TV.startLang());
+    document.querySelectorAll("[data-set-lang]").forEach((b) => b.addEventListener("click", () => applyLang(b.getAttribute("data-set-lang"))));
+  </script>
+</body>
+</html>

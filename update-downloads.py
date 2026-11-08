@@ -84,6 +84,8 @@ def main():
         "printables": printables_n,
         "cults": cults_n,
         "total": total,
+        # Anzahl Konstruktionen wird von Hand in stats.json gepflegt und hier nur übernommen.
+        "cad": previous.get("cad", 200),
     }
     STATS.write_text(json.dumps(out, indent=2) + "\n")
     print(f"Printables {printables_n} + Cults {cults_n} = {total}")

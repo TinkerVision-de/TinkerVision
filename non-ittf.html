@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <script>document.documentElement.setAttribute("data-theme", localStorage.getItem("tv-theme") || "light");</script>
+  <script>(function(){var t;try{t=localStorage.getItem("tv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ececf1" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0e0f12" media="(prefers-color-scheme: dark)">
-  <link rel="canonical" href="https://tinkervision.de/non-ittf.html">
-  <meta name="robots" content="noindex">
-  <title>TinkerVision — Non ITTF approved</title>
+  <title>Hinweis: nicht ITTF-zugelassen – TinkerVision</title>
   <meta name="description" content="Hinweis zu Produkten ohne ITTF-Zulassung.">
-  <meta property="og:title" content="TinkerVision — Non ITTF approved">
+  <meta name="theme-color" content="#ececf1">
+  <link rel="stylesheet" href="site.css">
+  <link rel="preload" href="fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/orbitron-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TinkerVision">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:title" content="Hinweis: nicht ITTF-zugelassen – TinkerVision">
   <meta property="og:description" content="Hinweis zu Produkten ohne ITTF-Zulassung.">
-  <meta property="og:image" content="https://tinkervision.de/emblem.png">
   <meta property="og:url" content="https://tinkervision.de/non-ittf.html">
+  <meta property="og:image" content="https://tinkervision.de/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TinkerVision – Idee wird Geometrie. 3D-Scan, CAD-Konstruktion, FEM-Analyse">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://tinkervision.de/non-ittf.html">
+  <link rel="alternate" hreflang="de" href="https://tinkervision.de/non-ittf.html" data-path="non-ittf.html">
+  <link rel="alternate" hreflang="en" href="https://tinkervision.de/en/non-ittf.html" data-path="en/non-ittf.html">
+  <link rel="alternate" hreflang="x-default" href="https://tinkervision.de/non-ittf.html" data-path="non-ittf.html">
+  <meta name="robots" content="noindex">
   <link rel="icon" href="favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
-  <link href="https://fonts.bunny.net/css?family=orbitron:700|outfit:400,500,600&display=swap" rel="stylesheet">
   <style>
-    :root { --ink:#101114; --muted:#6d6f78; --line:#e4e5ea; --bg0:#ececf1; --card:rgba(255,255,255,.78); --card-solid:#fff; --card-border:#fff; --glow:#fff; }
-    html[data-theme="dark"] { --ink:#f3f4f8; --muted:#9aa0ab; --line:#2c2e36; --bg0:#0e0f12; --card:rgba(22,24,29,.82); --card-solid:#1c1e24; --card-border:#2c2e36; --glow:#16181d; }
-    * { box-sizing:border-box; }
-    html,body { margin:0; padding:0; }
     body { font-family:Outfit,system-ui,sans-serif; color:var(--ink); min-height:100vh; display:flex; flex-direction:column; align-items:center; background:var(--bg0); background-image:radial-gradient(ellipse 70% 45% at 50% 0%, var(--glow) 0%, transparent 70%), linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size:auto,28px 28px,28px 28px; }
     .top { width:min(560px, calc(100% - 28px)); display:flex; justify-content:space-between; align-items:center; padding:16px 0 0; }
     .back { color:var(--muted); text-decoration:none; font-size:.88rem; }
-    .tools { display:flex; align-items:center; gap:10px; }
-    .ios-switch { position:relative; width:51px; height:31px; }
-    .ios-switch input { opacity:0; width:0; height:0; }
-    .ios-slider { position:absolute; inset:0; background:#e9e9eb; border-radius:31px; }
-    .ios-slider:before { content:""; position:absolute; height:27px; width:27px; left:2px; top:2px; background:#fff; border-radius:50%; transition:.2s; box-shadow:0 3px 8px rgba(0,0,0,.18); }
-    .ios-switch input:checked + .ios-slider { background:#34c759; }
-    .ios-switch input:checked + .ios-slider:before { transform:translateX(20px); }
-    .lang { display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; background:var(--card-solid); }
     .lang button { font-family:Outfit,sans-serif; font-size:.7rem; letter-spacing:.1em; font-weight:600; border:0; background:transparent; color:var(--muted); padding:7px 12px; cursor:pointer; }
-    .lang button[aria-pressed="true"] { background:var(--ink); color:#fff; }
-    main { width:min(560px, calc(100% - 28px)); margin:14px auto 28px; background:var(--card); border:1px solid var(--card-border); border-radius:28px; padding:28px 22px; box-shadow:0 24px 50px rgba(16,17,20,.08); }
+
+    main { width:min(560px, calc(100% - 28px)); margin:14px auto 28px; background:var(--card); border:1px solid var(--card-border); border-radius:28px; padding:28px 22px; box-shadow:0 24px 50px var(--shadow); }
     .brand { font-family:Orbitron,sans-serif; font-size:1.35rem; letter-spacing:.22em; font-weight:700; margin:0 0 8px; text-align:center; }
     h1 { font-family:Orbitron,sans-serif; font-size:.82rem; letter-spacing:.08em; margin:0; text-align:center; }
     .rule { width:28px; height:2px; background:var(--ink); margin:12px auto 16px; opacity:.22; border-radius:2px; }
     p { margin:0; line-height:1.55; font-size:.98rem; }
     footer { margin-top:auto; padding:8px 16px 28px; color:var(--muted); font-size:.75rem; display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
-    footer a { color:var(--muted); text-decoration:none; }
+
+  
   </style>
 </head>
 <body>
   <div class="top">
-    <a class="back" href="netzlehre.html" data-i18n="back"></a>
+    <a class="back" href="netzlehre.html" data-i18n="back">← Zurück</a>
     <div class="tools">
       <label class="ios-switch"><input type="checkbox" data-theme-toggle aria-label="Dunkles Design umschalten"><span class="ios-slider"></span></label>
       <div class="lang">
@@ -58,9 +58,9 @@
   </div>
   <main>
     <p class="brand">TinkerVision</p>
-    <h1 data-i18n="title"></h1>
+    <h1 data-i18n="title">Nicht ITTF-zugelassen</h1>
     <div class="rule"></div>
-    <p data-i18n="body"></p>
+    <p data-i18n="body">Dieses Produkt entspricht exakt den Maßen der ITTF-Standards, zum Prüfen der vorgegebenen Netzhöhe von 15,25 cm und der maximal zulässigen Belagdicke mit Schwamm von 4 mm. Es ist jedoch <strong>NICHT</strong> von der ITTF oder einer anderen Stelle genehmigt und daher nur für den privaten Gebrauch geeignet.</p>
   </main>
   <footer>
     <span>© 2026 TinkerVision</span>
@@ -69,6 +69,7 @@
     <a href="agb.html" data-i18n="agb">AGB</a>
     <a href="widerruf.html" data-i18n="widerruf">Widerruf</a>
   </footer>
+  <script src="site.js"></script>
   <script>
     const T = {
       de: {
@@ -91,21 +92,10 @@
       }
     };
     function applyLang(lang) {
-      const pack = T[lang] || T.de;
-      document.documentElement.lang = lang;
-      document.querySelectorAll("[data-i18n]").forEach((el) => { const k = el.getAttribute("data-i18n"); if (pack[k]) el.innerHTML = pack[k]; });
-      document.querySelectorAll("[data-set-lang]").forEach((b) => b.setAttribute("aria-pressed", b.getAttribute("data-set-lang") === lang ? "true" : "false"));
-      localStorage.setItem("tv-lang", lang);
+      TV.setLang(T, lang, { html: true });
     }
-    function applyTheme(theme) {
-      document.documentElement.setAttribute("data-theme", theme);
-      localStorage.setItem("tv-theme", theme);
-      document.querySelectorAll("[data-theme-toggle]").forEach((el) => el.checked = theme === "dark");
-    }
-    applyLang((localStorage.getItem("tv-lang") || "de") === "en" ? "en" : "de");
-    applyTheme(localStorage.getItem("tv-theme") || "light");
+    applyLang(TV.startLang());
     document.querySelectorAll("[data-set-lang]").forEach((b) => b.addEventListener("click", () => applyLang(b.getAttribute("data-set-lang"))));
-    document.querySelectorAll("[data-theme-toggle]").forEach((el) => el.addEventListener("change", () => applyTheme(el.checked ? "dark" : "light")));
   </script>
 </body>
 </html>

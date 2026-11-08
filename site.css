@@ -1,0 +1,101 @@
+/* TinkerVision – gemeinsame Basis für alle Seiten.
+   Seitenspezifisches CSS steht weiter im <style> der jeweiligen Seite
+   und darf diese Werte überschreiben. Farben immer über die Variablen,
+   nie fest als #fff, sonst bricht der Dark Mode. */
+
+@font-face { font-family: Orbitron; font-weight: 700; font-style: normal; font-display: swap; src: url("fonts/orbitron-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: Outfit; font-weight: 400; font-style: normal; font-display: swap; src: url("fonts/outfit-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: Outfit; font-weight: 500; font-style: normal; font-display: swap; src: url("fonts/outfit-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: Outfit; font-weight: 600; font-style: normal; font-display: swap; src: url("fonts/outfit-latin-600-normal.woff2") format("woff2"); }
+/* nur für die Netzlehre-Vorschau */
+@font-face { font-family: Oswald; font-weight: 600; font-style: normal; font-display: swap; src: url("fonts/oswald-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: Audiowide; font-weight: 400; font-style: normal; font-display: swap; src: url("fonts/audiowide-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: Anton; font-weight: 400; font-style: normal; font-display: swap; src: url("fonts/anton-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: Teko; font-weight: 600; font-style: normal; font-display: swap; src: url("fonts/teko-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: Righteous; font-weight: 400; font-style: normal; font-display: swap; src: url("fonts/righteous-latin-400-normal.woff2") format("woff2"); }
+
+:root {
+  color-scheme: light;
+  --ink: #101114;
+  --muted: #6d6f78;
+  --line: #e4e5ea;
+  --bg0: #ececf1;
+  --card: rgba(255,255,255,.78);
+  --card-solid: #fff;
+  --card-border: #fff;
+  --glow: #fff;
+  --on-ink: #fff;          /* Text auf Flächen in var(--ink) */
+  --highlight: rgba(255,255,255,.9);
+  --placeholder: #eef0f3;
+  --slider: #e9e9eb;
+  --shadow: rgba(16,17,20,.08);
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f3f4f8;
+  --muted: #9aa0ab;
+  --line: #2c2e36;
+  --bg0: #0e0f12;
+  --card: rgba(22,24,29,.82);
+  --card-solid: #1c1e24;
+  --card-border: #2c2e36;
+  --glow: #16181d;
+  --on-ink: #101114;
+  --highlight: rgba(255,255,255,.04);
+  --placeholder: #2a2c33;
+  --slider: #3a3c44;
+  --shadow: rgba(0,0,0,.35);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Outfit, system-ui, sans-serif;
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg0);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 50% 0%, var(--glow) 0%, transparent 70%),
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: auto, 28px 28px, 28px 28px;
+}
+
+.back { color: var(--muted); text-decoration: none; font-size: 0.88rem; }
+.back:hover { color: var(--ink); }
+.tools { display: flex; align-items: center; gap: 10px; }
+
+.ios-switch { position: relative; width: 51px; height: 31px; flex: 0 0 51px; }
+.ios-switch input { opacity: 0; width: 0; height: 0; }
+.ios-slider {
+  position: absolute; inset: 0; background: var(--slider); border-radius: 31px; transition: .2s;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
+}
+.ios-slider:before {
+  content: ""; position: absolute; height: 27px; width: 27px; left: 2px; top: 2px;
+  background: #fff; border-radius: 50%; transition: .2s; box-shadow: 0 3px 8px rgba(0,0,0,.18);
+}
+.ios-switch input:checked + .ios-slider { background: #34c759; }
+.ios-switch input:checked + .ios-slider:before { transform: translateX(20px); }
+.ios-switch input:focus-visible + .ios-slider { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+.lang {
+  display: inline-flex; border: 1px solid var(--line); border-radius: 999px;
+  overflow: hidden; background: var(--card-solid);
+}
+.lang button {
+  font-family: Outfit, sans-serif; font-size: 0.7rem; letter-spacing: 0.1em;
+  font-weight: 600; border: 0; background: transparent; color: var(--muted);
+  padding: 7px 12px; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); }
+
+footer a { color: var(--muted); text-decoration: none; }
+footer a:hover { color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; scroll-behavior: auto !important; }
+}

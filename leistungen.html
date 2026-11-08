@@ -1,60 +1,34 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <script>document.documentElement.setAttribute("data-theme", localStorage.getItem("tv-theme") || "light");
-    function applyTheme(theme) {
-      document.documentElement.setAttribute("data-theme", theme);
-      localStorage.setItem("tv-theme", theme);
-      document.querySelectorAll("[data-theme-toggle]").forEach((el) => {
-        el.checked = theme === "dark";
-      });
-    }
-    applyTheme(localStorage.getItem("tv-theme") || "light");
-    document.addEventListener("DOMContentLoaded", () => {
-      applyTheme(localStorage.getItem("tv-theme") || "light");
-      document.querySelectorAll("[data-theme-toggle]").forEach((el) => {
-        el.addEventListener("change", () => applyTheme(el.checked ? "dark" : "light"));
-      });
-    });
-  </script>
+  <script>(function(){var t;try{t=localStorage.getItem("tv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ececf1" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0e0f12" media="(prefers-color-scheme: dark)">
-  <link rel="canonical" href="https://tinkervision.de/leistungen.html">
-  <title>TinkerVision — Leistungen</title>
-  <meta name="description" content="Technische Zeichnungen, 3D-Scans, parametrische 3D-Dateien, FEM-Analyse und Prototypen.">
-  <meta property="og:title" content="TinkerVision — Leistungen">
-  <meta property="og:description" content="Technische Zeichnungen, 3D-Scans, parametrische 3D-Dateien, FEM-Analyse und Prototypen.">
-  <meta property="og:image" content="https://tinkervision.de/emblem.png">
+  <title>Leistungen: CAD, 3D-Scan, FEM &amp; 3D-Druck in Ostfriesland – TinkerVision</title>
+  <meta name="description" content="Technische Zeichnungen, 3D-Scans, parametrische 3D-Dateien, FEM-Analyse und Prototypen – plus Filamente und Materialien im Überblick.">
+  <meta name="theme-color" content="#ececf1">
+  <link rel="stylesheet" href="site.css">
+  <link rel="preload" href="fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/orbitron-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TinkerVision">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:title" content="Leistungen – TinkerVision">
+  <meta property="og:description" content="Technische Zeichnungen, 3D-Scans, parametrische 3D-Dateien, FEM-Analyse und Prototypen – plus Filamente und Materialien im Überblick.">
   <meta property="og:url" content="https://tinkervision.de/leistungen.html">
+  <meta property="og:image" content="https://tinkervision.de/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TinkerVision – Idee wird Geometrie. 3D-Scan, CAD-Konstruktion, FEM-Analyse">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://tinkervision.de/leistungen.html">
+  <link rel="alternate" hreflang="de" href="https://tinkervision.de/leistungen.html" data-path="leistungen.html">
+  <link rel="alternate" hreflang="en" href="https://tinkervision.de/en/leistungen.html" data-path="en/leistungen.html">
+  <link rel="alternate" hreflang="x-default" href="https://tinkervision.de/leistungen.html" data-path="leistungen.html">
   <link rel="icon" href="favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
-  <link href="https://fonts.bunny.net/css?family=orbitron:700|outfit:400,500,600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --ink: #101114;
-      --muted: #6d6f78;
-      --line: #e4e5ea;
-      --bg0: #ececf1;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: Outfit, system-ui, sans-serif;
-      color: var(--ink);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--bg0);
-      background-image:
-        radial-gradient(ellipse 70% 45% at 50% 0%, #ffffff 0%, transparent 70%),
-        linear-gradient(var(--line) 1px, transparent 1px),
-        linear-gradient(90deg, var(--line) 1px, transparent 1px);
-      background-size: auto, 28px 28px, 28px 28px;
-    }
     .top {
       width: min(560px, calc(100% - 28px));
       display: flex;
@@ -62,35 +36,14 @@
       align-items: center;
       padding: 16px 0 0;
     }
-    .back { color: var(--muted); text-decoration: none; font-size: 0.88rem; }
-    .back:hover { color: var(--ink); }
-    .lang {
-      display: inline-flex;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      overflow: hidden;
-      background: rgba(255,255,255,.86);
-    }
-    .lang button {
-      font-family: Outfit, sans-serif;
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
-      font-weight: 600;
-      border: 0;
-      background: transparent;
-      color: var(--muted);
-      padding: 7px 12px;
-      cursor: pointer;
-    }
-    .lang button[aria-pressed="true"] { background: var(--ink); color: #fff; }
     main {
       width: min(560px, calc(100% - 28px));
       margin: 14px auto 28px;
-      background: rgba(255,255,255,.78);
-      border: 1px solid #fff;
+      background: var(--card);
+      border: 1px solid var(--card-border);
       border-radius: 28px;
       padding: 28px 22px 22px;
-      box-shadow: 0 24px 50px rgba(16,17,20,.08);
+      box-shadow: 0 24px 50px var(--shadow);
     }
     .brand {
       font-family: Orbitron, sans-serif;
@@ -112,7 +65,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 6px;
       margin: 0 0 28px;
-      background: #fff;
+      background: var(--card-solid);
       border: 1px solid var(--line);
       border-radius: 12px;
       padding: 4px;
@@ -131,7 +84,7 @@
     }
     .tabs button[aria-selected="true"] {
       background: var(--ink);
-      color: #fff;
+      color: var(--on-ink);
     }
     .panel[hidden] { display: none; }
     .lead { color: var(--muted); font-size: 0.88rem; line-height: 1.5; margin: 0 0 10px; }
@@ -142,6 +95,7 @@
       letter-spacing: 0.04em;
       margin: 0 0 20px;
     }
+    .region { color: var(--muted); font-size: 0.8rem; text-align: center; margin: -4px 0 10px; }
     #panel-mat .lead { margin-bottom: 12px; }
     h2 {
       font-family: Orbitron, sans-serif;
@@ -155,7 +109,7 @@
       grid-template-columns: minmax(92px, 34%) 1fr;
       gap: 14px;
       align-items: center;
-      background: #fff;
+      background: var(--card-solid);
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 14px;
@@ -175,7 +129,7 @@
       object-fit: cover;
       border-radius: 10px;
       display: block;
-      background: #eef0f3;
+      background: var(--placeholder);
     }
     article .copy { min-width: 0; }
     article p { margin: 0; font-size: 0.88rem; line-height: 1.5; }
@@ -194,7 +148,7 @@
     .faq { margin-top: 22px; }
     .faq h2 { margin-bottom: 10px; }
     details {
-      background: #fff;
+      background: var(--card-solid);
       border: 1px solid var(--line);
       border-radius: 12px;
       padding: 12px 14px;
@@ -208,7 +162,7 @@
       border-radius: 10px;
       margin: 12px 0 8px;
       display: block;
-      background: #eef0f3;
+      background: var(--placeholder);
     }
     summary {
       cursor: pointer;
@@ -296,7 +250,7 @@
       font-weight: 600;
       font-size: 0.88rem;
       background: var(--ink);
-      color: #fff;
+      color: var(--on-ink);
       border-radius: 12px;
       padding: 12px 14px;
     }
@@ -309,7 +263,7 @@
       gap: 14px;
       justify-content: center;
     }
-    footer a { color: var(--muted); text-decoration: none; }
+
     .rule {
       width: 28px;
       height: 2px;
@@ -322,41 +276,13 @@
       .top, main { width: min(680px, calc(100% - 48px)); }
     }
   
-    html[data-theme="dark"] {
-      --ink: #f3f4f8;
-      --muted: #9aa0ab;
-      --line: #2c2e36;
-      --bg0: #0e0f12;
-      --bg: #0e0f12;
-      --card: rgba(22,24,29,.82);
-      --card-solid: #1c1e24;
-      --card-border: #2c2e36;
-    }
-    .tools { display: flex; align-items: center; gap: 10px; }
-    .ios-switch {
-      position: relative;
-      width: 51px;
-      height: 31px;
-      flex: 0 0 51px;
-    }
-    .ios-switch input { opacity: 0; width: 0; height: 0; }
-    .ios-slider {
-      position: absolute; inset: 0;
-      background: #e9e9eb; border-radius: 31px; transition: .2s;
-      box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
-    }
-    .ios-slider:before {
-      content: ""; position: absolute; height: 27px; width: 27px;
-      left: 2px; top: 2px; background: #fff; border-radius: 50%;
-      transition: .2s; box-shadow: 0 3px 8px rgba(0,0,0,.18);
-    }
-    .ios-switch input:checked + .ios-slider { background: #34c759; }
-    .ios-switch input:checked + .ios-slider:before { transform: translateX(20px); }
+    html[data-theme="dark"] { --bg: #0e0f12; }
+  
   </style>
 </head>
 <body>
   <div class="top">
-    <a class="back" href="index.html" data-i18n="back"></a>
+    <a class="back" href="index.html" data-i18n="back">← Zurück</a>
     <div class="tools">
       <label class="ios-switch" title="Dark Mode">
         <input type="checkbox" data-theme-toggle aria-label="Dunkles Design umschalten">
@@ -370,90 +296,91 @@
   </div>
   <main>
     <p class="brand">TinkerVision</p>
-    <h1 data-i18n="title"></h1>
+    <h1 data-i18n="title">Leistungen</h1>
     <div class="rule" aria-hidden="true"></div>
     <div class="tabs" role="tablist">
-      <button type="button" role="tab" id="tab-svc" aria-selected="true" aria-controls="panel-svc" data-tab="svc" data-i18n="tabSvc"></button>
-      <button type="button" role="tab" id="tab-mat" aria-selected="false" aria-controls="panel-mat" data-tab="mat" data-i18n="tabMat"></button>
+      <button type="button" role="tab" id="tab-svc" aria-selected="true" aria-controls="panel-svc" data-tab="svc" data-i18n="tabSvc">Leistungen</button>
+      <button type="button" role="tab" id="tab-mat" aria-selected="false" aria-controls="panel-mat" data-tab="mat" data-i18n="tabMat">Materialien</button>
     </div>
 
     <div class="panel" id="panel-svc" role="tabpanel">
-    <p class="lead" data-i18n="lead"></p>
-    <p class="credo" data-i18n="credo"></p>
+    <p class="lead" data-i18n="lead">Egal ob am Anfang nur eine Idee steht oder ein vorhandenes, beschädigtes Bauteil ersetzt oder verändert werden soll: von der Zeichnung bis zum Produkt finden Sie hier die passende Unterstützung für Ihr Projekt.</p>
+    <p class="credo" data-i18n="credo">Individuell · praxisnah · persönlich</p>
+    <p class="region" data-i18n="region">Aus Krummhörn bei Emden (Ostfriesland) – für Kunden aus der Region und deutschlandweit.</p>
     <div class="rule" aria-hidden="true"></div>
 
     <details class="job">
       <summary>
-        <span class="mat-name" data-i18n="t1"></span>
-        <span class="mat-note" data-i18n="s1"></span>
+        <span class="mat-name" data-i18n="t1">Technische Zeichnungen</span>
+        <span class="mat-note" data-i18n="s1">Standardisierte Zeichnungen — von der groben Skizze bis zur Bauanleitung.</span>
       </summary>
-      <p data-i18n="d1"></p>
-      <p class="meta" data-i18n="m1"></p>
+      <p data-i18n="d1">Zeichnungen von einzelnen Objekten oder ganzen Gruppen: als grobe Skizze, als ausführliche Bauanleitung oder als grafische Darstellung. Sie entstehen aus vorhandenen Teilen oder begleitend im Projekt, zusätzlich zum Hauptprodukt.</p>
+      <p class="meta" data-i18n="m1">Verkauf nur digital. Formate: PDF, SVG, PNG, DXF, DWG. Formate der Blätter: DIN A5 bis A1.</p>
     </details>
     <details class="job">
       <summary>
-        <span class="mat-name" data-i18n="t2"></span>
-        <span class="mat-note" data-i18n="s2"></span>
+        <span class="mat-name" data-i18n="t2">3D-Scans</span>
+        <span class="mat-note" data-i18n="s2">Vorhandenes Teil digitalisieren, wenn Zeichnung oder CAD fehlen.</span>
       </summary>
-      <p data-i18n="d2"></p>
-      <p class="meta" data-i18n="m2"></p>
+      <p data-i18n="d2">Handgeführter Scan mit strukturiertem Licht (Blau und Infrarot). Typische Genauigkeit bis etwa 0,02 mm an kleinen, gut erfassten Flächen. Objektgröße grob von 1 cm bis etwa 2 m. Farbe/Textur ist möglich. Sehr glänzende oder tiefdunkle Flächen brauchen oft eine matte Schicht, sonst reißt die Erfassung ab. Physische Objekte werden ausschließlich per DHL-Paket angenommen. Der Versand muss vorher über das Kontaktformular beantragt werden und erfolgt auf Kosten des Kunden.</p>
+      <p class="meta" data-i18n="m2">Ergebnis ist zuerst ein Netz, auf Wunsch ein daraus abgeleitetes CAD. Genauigkeit hängt von Größe, Oberfläche und Nutzung ab — Fotos und ungefähre Maße mit der Anfrage schicken. Einsendung nur nach Freigabe und nur per DHL, Porto trägt der Kunde.</p>
     </details>
     <details class="job">
       <summary>
-        <span class="mat-name" data-i18n="t3"></span>
-        <span class="mat-note" data-i18n="s3"></span>
+        <span class="mat-name" data-i18n="t3">Parametrische 3D-Dateien</span>
+        <span class="mat-note" data-i18n="s3">Standardisierte 3D-Dateien in gängigen Formaten — auf Wunsch druckfertig.</span>
       </summary>
-      <p data-i18n="d3"></p>
-      <p class="meta" data-i18n="m3"></p>
+      <p data-i18n="d3">Parametrische, standardisierte 3D-Dateien in den üblichen Formaten. Auf Wunsch wird die Datei auf den vorhandenen Drucker abgestimmt, inklusive angepasstem G-Code, damit die Druckqualität stimmt. Darüber geht Individualisierung: mehrfarbig, mehrere Werkstoffe, Relief, Schrift, Personalisierung.</p>
+      <p class="meta" data-i18n="m3">Üblich: STEP, IGES, STL, 3MF, OBJ, 3D-PDF, DXF, SVG, DWG — weitere Formate auf Anfrage.</p>
     </details>
     <details class="job">
       <summary>
-        <span class="mat-name" data-i18n="t5"></span>
-        <span class="mat-note" data-i18n="s5"></span>
+        <span class="mat-name" data-i18n="t5">FEM-Analyse</span>
+        <span class="mat-note" data-i18n="s5">Ob das Teil unter Last hält — grobe Prüfung am CAD, bevor gefertigt wird.</span>
       </summary>
-      <p data-i18n="d5"></p>
-      <p class="meta" data-i18n="m5"></p>
+      <p data-i18n="d5">Statische Betrachtung von Spannung und Verformung am Modell: typische Lagerung, Last und Werkstoff. Sinnvoll vor dem ersten Druck oder der Fräsung, wenn unklar ist, ob Rippen, Wandstärke oder Lage der Schrauben reichen.</p>
+      <p class="meta" data-i18n="m5">Das ist eine konstruktionsbegleitende Abschätzung, kein zertifiziertes Gutachten. Annahmen und Grenzen stehen in der Auswertung.</p>
     </details>
     <details class="job">
       <summary>
-        <span class="mat-name" data-i18n="t4"></span>
-        <span class="mat-note" data-i18n="s4"></span>
+        <span class="mat-name" data-i18n="t4">Vom Prototypen zur Sonderanfertigung</span>
+        <span class="mat-note" data-i18n="s4">Erst prüfen, dann das Stück, das bleiben soll.</span>
       </summary>
-      <p data-i18n="d4"></p>
-      <p class="meta" data-i18n="m4"></p>
+      <p data-i18n="d4">Der Prototyp ist zum Lernen da: sitzt es, hält es, fühlt es sich richtig an. Was nicht stimmt, geht zurück ins Modell. Die Sonderanfertigung kommt nach der Freigabe — ein Stück oder wenige, in FDM, SLA oder auf der 3-Achs-Fräse. Wer nur die Datei braucht, bekommt die Datei.</p>
+      <p class="meta" data-i18n="m4">Fertigung und Stückzahl stehen mit dem Auftrag fest. Preise nur auf Anfrage.</p>
     </details>
 
     <div class="faq">
-      <h2 data-i18n="faq"></h2>
+      <h2 data-i18n="faq">Häufige Fragen</h2>
       <details>
-        <summary data-i18n="q1"></summary>
-        <p data-i18n="a1"></p>
+        <summary data-i18n="q1">Was muss ich zur Anfrage mitschicken?</summary>
+        <p data-i18n="a1">Kurz das Ziel (passt, ersetzt, wird gedruckt, wird gefräst), vorhandene Dateien oder Fotos, ungefähre Größe und Werkstoff, plus Termin wenn es einen gibt. Unvollständige Angaben sind in Ordnung — Nachfragen kommen über das Kontaktformular.</p>
       </details>
       <details>
-        <summary data-i18n="q2"></summary>
-        <p data-i18n="a2"></p>
+        <summary data-i18n="q2">Welche Dateiformate bekomme ich?</summary>
+        <p data-i18n="a2">Was der Folgeprozess braucht. Üblich: STEP und IGES für CAD-Weitergabe, STL und 3MF für Druck, OBJ, DXF/SVG/DWG für 2D und Laser, Zeichnung als PDF. Weitere gängige Formate auf Anfrage.</p>
       </details>
       <details>
-        <summary data-i18n="q3"></summary>
-        <p data-i18n="a3"></p>
+        <summary data-i18n="q3">Ist das dasselbe wie die Shop-Modelle?</summary>
+        <p data-i18n="a3">Nein. Cults3D und Printables sind fertige Downloads. Die Leistungen hier sind Aufträge: eigenes Teil, Scan, Zeichnung oder Anpassung. Shop-Dateien eignen sich, wenn ein vorhandenes Modell reicht.</p>
       </details>
       <details>
-        <summary data-i18n="q4"></summary>
-        <p data-i18n="a4"></p>
+        <summary data-i18n="q4">Wie läuft ein Auftrag ab — und was kostet es?</summary>
+        <p data-i18n="a4">Anfrage über Kontakt, Klärung von Umfang und Lieferumfang, Konstruktion oder Scan, Freigabe, danach Dateien und — falls gewünscht — Prototyp in FDM, SLA oder 3-Achs-CNC. Preise ausschließlich auf Anfrage. Änderungen nach der Freigabe sind ein neuer Schritt.</p>
       </details>
     </div>
 
-    <a class="cta" href="kontakt.html" data-i18n="cta"></a>
+    <a class="cta" href="kontakt.html" data-i18n="cta">Anfrage senden</a>
     </div>
 
     <div class="panel" id="panel-mat" role="tabpanel" hidden>
-      <p class="lead" data-i18n="matLead"></p>
+      <p class="lead" data-i18n="matLead">Folgende Filamente stehen aktuell für das Prototyping zur Verfügung. Bei Bedarf bitte in der Anfrage angeben.</p>
       <div class="rule" aria-hidden="true"></div>
-      <h2 data-i18n="fdm"></h2>
+      <h2 data-i18n="fdm">FDM — Filamente</h2>
       <details id="petg-box">
         <summary>
           <span class="mat-name">PETG</span>
-          <span class="mat-note" data-i18n="petg"></span>
+          <span class="mat-note" data-i18n="petg">Für Teile, die etwas aushalten: Gehäuse, Halter, Alltagsgegenstände. Zäher als PLA, verträgt Feuchte und viele Haushaltsstoffe besser.</span>
         </summary>
         <div class="swatch" id="petg-swatch">
           <div class="fill" id="petg-fill"></div>
@@ -465,7 +392,7 @@
       <details id="pla-box">
         <summary>
           <span class="mat-name">PLA</span>
-          <span class="mat-note" data-i18n="pla"></span>
+          <span class="mat-note" data-i18n="pla">Für Anschauungsstücke, Passproben und Teile, die vor allem gut aussehen sollen. Steif und detailreich — nicht für starke Hitze, Stöße oder dauerhaftes Draußen.</span>
         </summary>
         <div class="swatch" id="pla-swatch">
           <div class="fill" id="pla-fill"></div>
@@ -477,7 +404,7 @@
       <details id="tpu-box">
         <summary>
           <span class="mat-name">TPU</span>
-          <span class="mat-note" data-i18n="tpu"></span>
+          <span class="mat-note" data-i18n="tpu">Für alles, das sich biegen oder federn soll: Dichtungen, Puffer, Clips, weiche Auflagen. Härte je nach Sorte — in der Anfrage sagen, wie weich das Teil sein soll.</span>
         </summary>
         <div class="swatch" id="tpu-swatch">
           <div class="fill" id="tpu-fill"></div>
@@ -486,7 +413,7 @@
         <p class="color-label" id="tpu-label">Digitalblau</p>
         <div class="chips" id="tpu-chips"></div>
       </details>
-      <a class="cta" href="kontakt.html" data-i18n="cta"></a>
+      <a class="cta" href="kontakt.html" data-i18n="cta">Anfrage senden</a>
     </div>
   </main>
   <footer>
@@ -496,11 +423,13 @@
     <a href="agb.html" data-i18n="agb">AGB</a>
     <a href="widerruf.html" data-i18n="widerruf">Widerruf</a>
   </footer>
+  <script src="site.js"></script>
   <script>
     const T = {
       de: {
         back: "← Zurück",
         title: "Leistungen",
+        region: "Aus Krummhörn bei Emden (Ostfriesland) – für Kunden aus der Region und deutschlandweit.",
         lead: "Egal ob am Anfang nur eine Idee steht oder ein vorhandenes, beschädigtes Bauteil ersetzt oder verändert werden soll: von der Zeichnung bis zum Produkt finden Sie hier die passende Unterstützung für Ihr Projekt.",
         credo: "Individuell · praxisnah · persönlich",
         t1: "Technische Zeichnungen",
@@ -548,6 +477,7 @@
       en: {
         back: "← Back",
         title: "Services",
+        region: "Based in Krummhörn near Emden, East Frisia, Germany – for customers in the region and across Germany.",
         lead: "Whether you start with an idea or need a damaged part replaced or changed: from drawing to finished piece, this is support for your project.",
         credo: "Individual · practical · personal",
         t1: "Technical drawings",
@@ -594,16 +524,7 @@
       }
     };
     function applyLang(lang) {
-      const pack = T[lang] || T.de;
-      document.documentElement.lang = lang;
-      document.querySelectorAll("[data-i18n]").forEach((el) => {
-        const key = el.getAttribute("data-i18n");
-        if (pack[key]) el.textContent = pack[key];
-      });
-      document.querySelectorAll("[data-set-lang]").forEach((btn) => {
-        btn.setAttribute("aria-pressed", btn.getAttribute("data-set-lang") === lang ? "true" : "false");
-      });
-      localStorage.setItem("tv-lang", lang);
+      TV.setLang(T, lang);
     }
     const PETG = [
       { id: "weiss", nameDe: "Weiß", nameEn: "White", hex: "#EFF0F1" },
@@ -715,8 +636,7 @@
       });
       setPetg(PETG[0]);
     })();
-    const start = localStorage.getItem("tv-lang") || (navigator.language || "de").slice(0, 2);
-    applyLang(start === "en" ? "en" : "de");
+    applyLang(TV.startLang());
     document.querySelectorAll("[data-set-lang]").forEach((btn) => {
       btn.addEventListener("click", () => {
         applyLang(btn.getAttribute("data-set-lang"));
