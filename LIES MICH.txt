@@ -1,0 +1,21 @@
+Nachreichen zu b119
+===================
+
+Beim Upload am 8.11. um 21:02 sind nur die Dateien aus dem Hauptordner angekommen.
+Diese Ordner fehlen im Repo und müssen noch hoch:
+
+  en/        englische Seiten (ohne sie führt der EN-Knopf auf eine Fehlerseite)
+  fonts/     Schriften (ohne sie fehlt z. B. die Orbitron-Schrift)
+  projekte/  Platzhalterbild der Projekte-Seite
+  tools/     Build- und Prüfskripte
+  .github/   Workflow "site check" (versteckter Ordner – im Dateimanager Strg+H)
+  README.md  aktuelle Fassung
+
+So geht's im Browser:
+  1. github.com/TinkerVision-de/TinkerVision öffnen, Branch "website"
+  2. "Add file" -> "Upload files"
+  3. Die ORDNER (nicht ihren Inhalt) aus diesem Paket ins Upload-Feld ziehen.
+     Die Ordnerstruktur bleibt dabei erhalten.
+  4. Commit.
+
+Zusätzlich im Repo löschen: Custom.png (Datei öffnen -> Mülleimer-Symbol).

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#8a8d97" fill-opacity=".14"/>
+  <g fill="none" stroke="#8a8d97" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" opacity=".7">
+    <path d="M300 250h40l20-30h80l20 30h40v130H300z"/>
+    <circle cx="400" cy="315" r="38"/>
+  </g>
+  <text x="400" y="440" text-anchor="middle" font-family="system-ui, sans-serif" font-size="30" fill="#8a8d97">Foto folgt</text>
+</svg>

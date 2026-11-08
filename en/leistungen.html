@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!-- Automatisch erzeugt aus ../leistungen.html durch tools/build_en.py – nicht direkt bearbeiten. -->
+<html lang="en">
+<head>
+  <script>(function(){var t;try{t=localStorage.getItem("tv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services: CAD, 3D scanning, FEA &amp; 3D printing – TinkerVision</title>
+  <meta name="description" content="Technical drawings, 3D scans, parametric 3D files, FEA and prototypes – plus an overview of filaments and materials.">
+  <meta name="theme-color" content="#ececf1">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="preload" href="../fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/orbitron-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TinkerVision">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:title" content="Services – TinkerVision">
+  <meta property="og:description" content="Technical drawings, 3D scans, parametric 3D files, FEA and prototypes – plus an overview of filaments and materials.">
+  <meta property="og:url" content="https://tinkervision.de/en/leistungen.html">
+  <meta property="og:image" content="https://tinkervision.de/og-image-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TinkerVision – Idea becomes geometry. 3D scanning, CAD design, FEA">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://tinkervision.de/en/leistungen.html">
+  <link rel="alternate" hreflang="de" href="https://tinkervision.de/leistungen.html" data-path="../leistungen.html">
+  <link rel="alternate" hreflang="en" href="https://tinkervision.de/en/leistungen.html" data-path="leistungen.html">
+  <link rel="alternate" hreflang="x-default" href="https://tinkervision.de/leistungen.html" data-path="../leistungen.html">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <style>
+    .top {
+      width: min(560px, calc(100% - 28px));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0 0;
+    }
+    main {
+      width: min(560px, calc(100% - 28px));
+      margin: 14px auto 28px;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 28px 22px 22px;
+      box-shadow: 0 24px 50px var(--shadow);
+    }
+    .brand {
+      font-family: Orbitron, sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.24em;
+      font-weight: 700;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+    h1 {
+      font-family: Orbitron, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.16em;
+      margin: 0 0 18px;
+      text-align: center;
+    }
+    .tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin: 0 0 28px;
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 4px;
+    }
+    .tabs button {
+      font-family: Outfit, sans-serif;
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      border: 0;
+      border-radius: 9px;
+      padding: 9px 8px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .tabs button[aria-selected="true"] {
+      background: var(--ink);
+      color: var(--on-ink);
+    }
+    .panel[hidden] { display: none; }
+    .lead { color: var(--muted); font-size: 0.88rem; line-height: 1.5; margin: 0 0 10px; }
+    .credo {
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      margin: 0 0 20px;
+    }
+    .region { color: var(--muted); font-size: 0.8rem; text-align: center; margin: -4px 0 10px; }
+    #panel-mat .lead { margin-bottom: 12px; }
+    h2 {
+      font-family: Orbitron, sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      margin: 0 0 10px;
+      color: var(--ink);
+    }
+    article {
+      display: grid;
+      grid-template-columns: minmax(92px, 34%) 1fr;
+      gap: 14px;
+      align-items: center;
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 10px;
+    }
+    article:nth-of-type(even) {
+      grid-template-columns: 1fr minmax(92px, 34%);
+    }
+    article:nth-of-type(even) img { order: 2; }
+    article:not(:has(img)) {
+      grid-template-columns: 1fr;
+    }
+    article img {
+      width: 100%;
+      height: auto;
+      max-height: 128px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      background: var(--placeholder);
+    }
+    article .copy { min-width: 0; }
+    article p { margin: 0; font-size: 0.88rem; line-height: 1.5; }
+    @media (max-width: 420px) {
+      article,
+      article:nth-of-type(even) { grid-template-columns: 1fr; }
+      article:nth-of-type(even) img { order: 0; }
+      article img { max-height: none; }
+    }
+    .meta {
+      margin-top: 8px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .faq { margin-top: 22px; }
+    .faq h2 { margin-bottom: 10px; }
+    details {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+    details[open] { padding-bottom: 14px; }
+    .job img {
+      width: 100%;
+      max-height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 12px 0 8px;
+      display: block;
+      background: var(--placeholder);
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.88rem;
+    }
+    summary .mat-name { display: inline; }
+    summary .mat-note {
+      display: block;
+      font-weight: 400;
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.45;
+      margin-top: 6px;
+    }
+    details p { margin: 8px 0 2px; font-size: 0.86rem; line-height: 1.5; color: var(--muted); }
+    .swatch {
+      position: relative;
+      width: min(220px, 80%);
+      margin: 14px auto 10px;
+      background: transparent;
+    }
+    .swatch .fill {
+      position: absolute;
+      inset: 0;
+      background: #EFF0F1;
+      -webkit-mask-image: url("../filamente/filament_mask.png");
+      mask-image: url("../filamente/filament_mask.png");
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+    }
+    .swatch img {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 6px;
+    }
+    .chips button {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid rgba(16,17,20,.2);
+      padding: 0;
+      cursor: pointer;
+    }
+    .chips button[aria-pressed="true"] {
+      outline: 2px solid var(--ink);
+      outline-offset: 2px;
+    }
+    .chips button.translucent {
+      background:
+        linear-gradient(180deg, rgba(255,127,50,.72), rgba(255,160,80,.38)),
+        repeating-conic-gradient(#d9d9d9 0 25%, #fff 0 50%) 0 0 / 8px 8px;
+    }
+    .chips button.gloss {
+      background: radial-gradient(circle at 32% 28%, #5a5a5a 0%, #111 58%, #000 100%);
+    }
+    .chips button.marble {
+      background:
+        radial-gradient(ellipse at 20% 30%, #fff 0 12%, transparent 28%),
+        radial-gradient(ellipse at 70% 60%, #cfc8be 0 10%, transparent 26%),
+        linear-gradient(115deg, #f3f0ea 0%, #d9d4cb 38%, #efece6 52%, #c5bfb4 78%, #f7f5f1 100%);
+    }
+    .color-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+    .cta {
+      display: block;
+      margin-top: 18px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      background: var(--ink);
+      color: var(--on-ink);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    footer {
+      margin-top: auto;
+      padding: 4px 16px 28px;
+      color: var(--muted);
+      font-size: 0.75rem;
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+    }
+
+    .rule {
+      width: 28px;
+      height: 2px;
+      background: var(--ink);
+      margin: 14px auto;
+      opacity: .22;
+      border-radius: 2px;
+    }
+    @media (min-width: 900px) {
+      .top, main { width: min(680px, calc(100% - 48px)); }
+    }
+  
+    html[data-theme="dark"] { --bg: #0e0f12; }
+  
+  </style>
+</head>
+<body>
+  <div class="top">
+    <a class="back" href="index.html" data-i18n="back">← Back</a>
+    <div class="tools">
+      <label class="ios-switch" title="Dark Mode">
+        <input type="checkbox" data-theme-toggle aria-label="Toggle dark mode">
+        <span class="ios-slider"></span>
+      </label>
+      <div class="lang" role="group">
+        <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <p class="brand">TinkerVision</p>
+    <h1 data-i18n="title">Services</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" id="tab-svc" aria-selected="true" aria-controls="panel-svc" data-tab="svc" data-i18n="tabSvc">Services</button>
+      <button type="button" role="tab" id="tab-mat" aria-selected="false" aria-controls="panel-mat" data-tab="mat" data-i18n="tabMat">Materials</button>
+    </div>
+
+    <div class="panel" id="panel-svc" role="tabpanel">
+    <p class="lead" data-i18n="lead">Whether you start with an idea or need a damaged part replaced or changed: from drawing to finished piece, this is support for your project.</p>
+    <p class="credo" data-i18n="credo">Individual · practical · personal</p>
+    <p class="region" data-i18n="region">Based in Krummhörn near Emden, East Frisia, Germany – for customers in the region and across Germany.</p>
+    <div class="rule" aria-hidden="true"></div>
+
+    <details class="job">
+      <summary>
+        <span class="mat-name" data-i18n="t1">Technical drawings</span>
+        <span class="mat-note" data-i18n="s1">Standard drawings — from a rough sketch to an assembly guide.</span>
+      </summary>
+      <p data-i18n="d1">Drawings of single objects or groups: a rough sketch, a full build guide or a graphic sheet. They come from existing parts or grow with the project, alongside the main deliverable.</p>
+      <p class="meta" data-i18n="m1">Sold digitally only. Formats: PDF, SVG, PNG, DXF, DWG. Sheet sizes: ISO A5 to A1.</p>
+    </details>
+    <details class="job">
+      <summary>
+        <span class="mat-name" data-i18n="t2">3D scans</span>
+        <span class="mat-note" data-i18n="s2">Digitise an existing part when drawings or CAD are missing.</span>
+      </summary>
+      <p data-i18n="d2">Handheld structured-light scan (blue and infrared). Typical accuracy around 0.02 mm on small, well-captured surfaces. Object size roughly 1 cm to about 2 m. Colour/texture is available. Very glossy or very dark surfaces often need a matte coat or tracking drops. Physical objects are accepted exclusively via DHL parcel. Shipping must be requested through the contact form first and is paid by the customer.</p>
+      <p class="meta" data-i18n="m2">First output is a mesh, then CAD if wanted. Accuracy depends on size, surface and use — send photos and rough dimensions with the enquiry. Send-in only after approval and only via DHL; postage is paid by the customer.</p>
+    </details>
+    <details class="job">
+      <summary>
+        <span class="mat-name" data-i18n="t3">Parametric 3D files</span>
+        <span class="mat-note" data-i18n="s3">Standard 3D files in common formats — print-ready if you want.</span>
+      </summary>
+      <p data-i18n="d3">Parametric, standard 3D files in the usual formats. On request the file is tuned to your printer, including custom G-code, so print quality holds. That also covers custom work: multi-colour, multi-material, relief, lettering, personalisation.</p>
+      <p class="meta" data-i18n="m3">Typical: STEP, IGES, STL, 3MF, OBJ, 3D-PDF, DXF, SVG, DWG — other formats on request.</p>
+    </details>
+    <details class="job">
+      <summary>
+        <span class="mat-name" data-i18n="t5">FEA</span>
+        <span class="mat-note" data-i18n="s5">A check on whether the part holds under load — before it is made.</span>
+      </summary>
+      <p data-i18n="d5">Static look at stress and deflection on the model: typical supports, load and material. Useful before the first print or milling job if ribs, wall thickness or screw positions are still a guess.</p>
+      <p class="meta" data-i18n="m5">This is a design-aid estimate, not a certified report. Assumptions and limits come with the write-up.</p>
+    </details>
+    <details class="job">
+      <summary>
+        <span class="mat-name" data-i18n="t4">From prototype to custom one-off</span>
+        <span class="mat-note" data-i18n="s4">Test first, then the piece that stays.</span>
+      </summary>
+      <p data-i18n="d4">A prototype is for learning: does it fit, hold, feel right. What fails goes back into the model. The custom part comes after approval — one piece or a few, in FDM, SLA or on a 3-axis mill. If you only need the file, you get the file.</p>
+      <p class="meta" data-i18n="m4">Process and quantity are fixed with the brief. Prices on request only.</p>
+    </details>
+
+    <div class="faq">
+      <h2 data-i18n="faq">Common questions</h2>
+      <details>
+        <summary data-i18n="q1">What should I send with an enquiry?</summary>
+        <p data-i18n="a1">The goal in one line (fit, replace, print, machine), any files or photos, rough size and material, and a deadline if there is one. Incomplete briefs are fine — follow-up goes through the contact form.</p>
+      </details>
+      <details>
+        <summary data-i18n="q2">Which file formats do I receive?</summary>
+        <p data-i18n="a2">Whatever the next process needs. Typical: STEP and IGES for CAD hand-off, STL and 3MF for printing, OBJ, DXF/SVG/DWG for 2D and laser, drawings as PDF. Other common formats on request.</p>
+      </details>
+      <details>
+        <summary data-i18n="q3">Is this the same as the shop models?</summary>
+        <p data-i18n="a3">No. Cults3D and Printables are ready downloads. The services here are commissions: your part, a scan, a drawing or an adaptation. Use the shops when an existing model is enough.</p>
+      </details>
+      <details>
+        <summary data-i18n="q4">How does a job run — and what does it cost?</summary>
+        <p data-i18n="a4">Enquiry via contact, scope and deliverables agreed, design or scan, approval, then files and — if wanted — a prototype in FDM, SLA or 3-axis CNC. Prices on request only. Changes after approval are a new step.</p>
+      </details>
+    </div>
+
+    <a class="cta" href="kontakt.html" data-i18n="cta">Send an enquiry</a>
+    </div>
+
+    <div class="panel" id="panel-mat" role="tabpanel" hidden>
+      <p class="lead" data-i18n="matLead">The following filaments are currently available for prototyping. Please name your choice in the enquiry.</p>
+      <div class="rule" aria-hidden="true"></div>
+      <h2 data-i18n="fdm">FDM — filaments</h2>
+      <details id="petg-box">
+        <summary>
+          <span class="mat-name">PETG</span>
+          <span class="mat-note" data-i18n="petg">For parts that need to take a bit of use: housings, brackets, everyday objects. Tougher than PLA and better with moisture and household chemicals.</span>
+        </summary>
+        <div class="swatch" id="petg-swatch">
+          <div class="fill" id="petg-fill"></div>
+          <img src="../filamente/filament.png" alt="Filament" width="440" height="440">
+        </div>
+        <p class="color-label" id="petg-label">Weiß</p>
+        <div class="chips" id="petg-chips"></div>
+      </details>
+      <details id="pla-box">
+        <summary>
+          <span class="mat-name">PLA</span>
+          <span class="mat-note" data-i18n="pla">For display pieces, fit checks and parts that should look sharp. Stiff and detailed — not for high heat, knocks or permanent outdoor use.</span>
+        </summary>
+        <div class="swatch" id="pla-swatch">
+          <div class="fill" id="pla-fill"></div>
+          <img src="../filamente/filament.png" alt="Filament" width="440" height="440">
+        </div>
+        <p class="color-label" id="pla-label">Tannengrün</p>
+        <div class="chips" id="pla-chips"></div>
+      </details>
+      <details id="tpu-box">
+        <summary>
+          <span class="mat-name">TPU</span>
+          <span class="mat-note" data-i18n="tpu">For parts that should bend or spring: seals, bumpers, clips, soft pads. Hardness depends on the grade — say in the enquiry how soft the part should feel.</span>
+        </summary>
+        <div class="swatch" id="tpu-swatch">
+          <div class="fill" id="tpu-fill"></div>
+          <img src="../filamente/filament.png" alt="Filament" width="440" height="440">
+        </div>
+        <p class="color-label" id="tpu-label">Digitalblau</p>
+        <div class="chips" id="tpu-chips"></div>
+      </details>
+      <a class="cta" href="kontakt.html" data-i18n="cta">Send an enquiry</a>
+    </div>
+  </main>
+  <footer>
+    <span>© 2026 TinkerVision</span>
+    <a href="impressum.html" data-i18n="imprint">Imprint</a>
+    <a href="datenschutz.html" data-i18n="privacy">Privacy</a>
+    <a href="agb.html" data-i18n="agb">Terms</a>
+    <a href="widerruf.html" data-i18n="widerruf">Withdrawal</a>
+  </footer>
+  <script src="../site.js"></script>
+  <script>
+    const T = {
+      de: {
+        back: "← Zurück",
+        title: "Leistungen",
+        region: "Aus Krummhörn bei Emden (Ostfriesland) – für Kunden aus der Region und deutschlandweit.",
+        lead: "Egal ob am Anfang nur eine Idee steht oder ein vorhandenes, beschädigtes Bauteil ersetzt oder verändert werden soll: von der Zeichnung bis zum Produkt finden Sie hier die passende Unterstützung für Ihr Projekt.",
+        credo: "Individuell · praxisnah · persönlich",
+        t1: "Technische Zeichnungen",
+        s1: "Standardisierte Zeichnungen — von der groben Skizze bis zur Bauanleitung.",
+        d1: "Zeichnungen von einzelnen Objekten oder ganzen Gruppen: als grobe Skizze, als ausführliche Bauanleitung oder als grafische Darstellung. Sie entstehen aus vorhandenen Teilen oder begleitend im Projekt, zusätzlich zum Hauptprodukt.",
+        m1: "Verkauf nur digital. Formate: PDF, SVG, PNG, DXF, DWG. Formate der Blätter: DIN A5 bis A1.",
+        t2: "3D-Scans",
+        s2: "Vorhandenes Teil digitalisieren, wenn Zeichnung oder CAD fehlen.",
+        d2: "Handgeführter Scan mit strukturiertem Licht (Blau und Infrarot). Typische Genauigkeit bis etwa 0,02 mm an kleinen, gut erfassten Flächen. Objektgröße grob von 1 cm bis etwa 2 m. Farbe/Textur ist möglich. Sehr glänzende oder tiefdunkle Flächen brauchen oft eine matte Schicht, sonst reißt die Erfassung ab. Physische Objekte werden ausschließlich per DHL-Paket angenommen. Der Versand muss vorher über das Kontaktformular beantragt werden und erfolgt auf Kosten des Kunden.",
+        m2: "Ergebnis ist zuerst ein Netz, auf Wunsch ein daraus abgeleitetes CAD. Genauigkeit hängt von Größe, Oberfläche und Nutzung ab — Fotos und ungefähre Maße mit der Anfrage schicken. Einsendung nur nach Freigabe und nur per DHL, Porto trägt der Kunde.",
+        t3: "Parametrische 3D-Dateien",
+        s3: "Standardisierte 3D-Dateien in gängigen Formaten — auf Wunsch druckfertig.",
+        d3: "Parametrische, standardisierte 3D-Dateien in den üblichen Formaten. Auf Wunsch wird die Datei auf den vorhandenen Drucker abgestimmt, inklusive angepasstem G-Code, damit die Druckqualität stimmt. Darüber geht Individualisierung: mehrfarbig, mehrere Werkstoffe, Relief, Schrift, Personalisierung.",
+        m3: "Üblich: STEP, IGES, STL, 3MF, OBJ, 3D-PDF, DXF, SVG, DWG — weitere Formate auf Anfrage.",
+        t5: "FEM-Analyse",
+        s5: "Ob das Teil unter Last hält — grobe Prüfung am CAD, bevor gefertigt wird.",
+        d5: "Statische Betrachtung von Spannung und Verformung am Modell: typische Lagerung, Last und Werkstoff. Sinnvoll vor dem ersten Druck oder der Fräsung, wenn unklar ist, ob Rippen, Wandstärke oder Lage der Schrauben reichen.",
+        m5: "Das ist eine konstruktionsbegleitende Abschätzung, kein zertifiziertes Gutachten. Annahmen und Grenzen stehen in der Auswertung.",
+        t4: "Vom Prototypen zur Sonderanfertigung",
+        s4: "Erst prüfen, dann das Stück, das bleiben soll.",
+        d4: "Der Prototyp ist zum Lernen da: sitzt es, hält es, fühlt es sich richtig an. Was nicht stimmt, geht zurück ins Modell. Die Sonderanfertigung kommt nach der Freigabe — ein Stück oder wenige, in FDM, SLA oder auf der 3-Achs-Fräse. Wer nur die Datei braucht, bekommt die Datei.",
+        m4: "Fertigung und Stückzahl stehen mit dem Auftrag fest. Preise nur auf Anfrage.",
+        faq: "Häufige Fragen",
+        q1: "Was muss ich zur Anfrage mitschicken?",
+        a1: "Kurz das Ziel (passt, ersetzt, wird gedruckt, wird gefräst), vorhandene Dateien oder Fotos, ungefähre Größe und Werkstoff, plus Termin wenn es einen gibt. Unvollständige Angaben sind in Ordnung — Nachfragen kommen über das Kontaktformular.",
+        q2: "Welche Dateiformate bekomme ich?",
+        a2: "Was der Folgeprozess braucht. Üblich: STEP und IGES für CAD-Weitergabe, STL und 3MF für Druck, OBJ, DXF/SVG/DWG für 2D und Laser, Zeichnung als PDF. Weitere gängige Formate auf Anfrage.",
+        q3: "Ist das dasselbe wie die Shop-Modelle?",
+        a3: "Nein. Cults3D und Printables sind fertige Downloads. Die Leistungen hier sind Aufträge: eigenes Teil, Scan, Zeichnung oder Anpassung. Shop-Dateien eignen sich, wenn ein vorhandenes Modell reicht.",
+        q4: "Wie läuft ein Auftrag ab — und was kostet es?",
+        a4: "Anfrage über Kontakt, Klärung von Umfang und Lieferumfang, Konstruktion oder Scan, Freigabe, danach Dateien und — falls gewünscht — Prototyp in FDM, SLA oder 3-Achs-CNC. Preise ausschließlich auf Anfrage. Änderungen nach der Freigabe sind ein neuer Schritt.",
+        cta: "Anfrage senden",
+        tabSvc: "Leistungen",
+        tabMat: "Materialien",
+        matLead: "Folgende Filamente stehen aktuell für das Prototyping zur Verfügung. Bei Bedarf bitte in der Anfrage angeben.",
+        fdm: "FDM — Filamente",
+        pla: "Für Anschauungsstücke, Passproben und Teile, die vor allem gut aussehen sollen. Steif und detailreich — nicht für starke Hitze, Stöße oder dauerhaftes Draußen.",
+        petg: "Für Teile, die etwas aushalten: Gehäuse, Halter, Alltagsgegenstände. Zäher als PLA, verträgt Feuchte und viele Haushaltsstoffe besser.",
+        tpu: "Für alles, das sich biegen oder federn soll: Dichtungen, Puffer, Clips, weiche Auflagen. Härte je nach Sorte — in der Anfrage sagen, wie weich das Teil sein soll.",
+        imprint: "Impressum",
+        privacy: "Datenschutz",
+        agb: "AGB",
+        widerruf: "Widerruf"
+      },
+      en: {
+        back: "← Back",
+        title: "Services",
+        region: "Based in Krummhörn near Emden, East Frisia, Germany – for customers in the region and across Germany.",
+        lead: "Whether you start with an idea or need a damaged part replaced or changed: from drawing to finished piece, this is support for your project.",
+        credo: "Individual · practical · personal",
+        t1: "Technical drawings",
+        s1: "Standard drawings — from a rough sketch to an assembly guide.",
+        d1: "Drawings of single objects or groups: a rough sketch, a full build guide or a graphic sheet. They come from existing parts or grow with the project, alongside the main deliverable.",
+        m1: "Sold digitally only. Formats: PDF, SVG, PNG, DXF, DWG. Sheet sizes: ISO A5 to A1.",
+        t2: "3D scans",
+        s2: "Digitise an existing part when drawings or CAD are missing.",
+        d2: "Handheld structured-light scan (blue and infrared). Typical accuracy around 0.02 mm on small, well-captured surfaces. Object size roughly 1 cm to about 2 m. Colour/texture is available. Very glossy or very dark surfaces often need a matte coat or tracking drops. Physical objects are accepted exclusively via DHL parcel. Shipping must be requested through the contact form first and is paid by the customer.",
+        m2: "First output is a mesh, then CAD if wanted. Accuracy depends on size, surface and use — send photos and rough dimensions with the enquiry. Send-in only after approval and only via DHL; postage is paid by the customer.",
+        t3: "Parametric 3D files",
+        s3: "Standard 3D files in common formats — print-ready if you want.",
+        d3: "Parametric, standard 3D files in the usual formats. On request the file is tuned to your printer, including custom G-code, so print quality holds. That also covers custom work: multi-colour, multi-material, relief, lettering, personalisation.",
+        m3: "Typical: STEP, IGES, STL, 3MF, OBJ, 3D-PDF, DXF, SVG, DWG — other formats on request.",
+        t5: "FEA",
+        s5: "A check on whether the part holds under load — before it is made.",
+        d5: "Static look at stress and deflection on the model: typical supports, load and material. Useful before the first print or milling job if ribs, wall thickness or screw positions are still a guess.",
+        m5: "This is a design-aid estimate, not a certified report. Assumptions and limits come with the write-up.",
+        t4: "From prototype to custom one-off",
+        s4: "Test first, then the piece that stays.",
+        d4: "A prototype is for learning: does it fit, hold, feel right. What fails goes back into the model. The custom part comes after approval — one piece or a few, in FDM, SLA or on a 3-axis mill. If you only need the file, you get the file.",
+        m4: "Process and quantity are fixed with the brief. Prices on request only.",
+        faq: "Common questions",
+        q1: "What should I send with an enquiry?",
+        a1: "The goal in one line (fit, replace, print, machine), any files or photos, rough size and material, and a deadline if there is one. Incomplete briefs are fine — follow-up goes through the contact form.",
+        q2: "Which file formats do I receive?",
+        a2: "Whatever the next process needs. Typical: STEP and IGES for CAD hand-off, STL and 3MF for printing, OBJ, DXF/SVG/DWG for 2D and laser, drawings as PDF. Other common formats on request.",
+        q3: "Is this the same as the shop models?",
+        a3: "No. Cults3D and Printables are ready downloads. The services here are commissions: your part, a scan, a drawing or an adaptation. Use the shops when an existing model is enough.",
+        q4: "How does a job run — and what does it cost?",
+        a4: "Enquiry via contact, scope and deliverables agreed, design or scan, approval, then files and — if wanted — a prototype in FDM, SLA or 3-axis CNC. Prices on request only. Changes after approval are a new step.",
+        cta: "Send an enquiry",
+        tabSvc: "Services",
+        tabMat: "Materials",
+        matLead: "The following filaments are currently available for prototyping. Please name your choice in the enquiry.",
+        fdm: "FDM — filaments",
+        pla: "For display pieces, fit checks and parts that should look sharp. Stiff and detailed — not for high heat, knocks or permanent outdoor use.",
+        petg: "For parts that need to take a bit of use: housings, brackets, everyday objects. Tougher than PLA and better with moisture and household chemicals.",
+        tpu: "For parts that should bend or spring: seals, bumpers, clips, soft pads. Hardness depends on the grade — say in the enquiry how soft the part should feel.",
+        imprint: "Imprint",
+        privacy: "Privacy",
+        agb: "Terms",
+        widerruf: "Withdrawal"
+      }
+    };
+    function applyLang(lang) {
+      TV.setLang(T, lang);
+    }
+    const PETG = [
+      { id: "weiss", nameDe: "Weiß", nameEn: "White", hex: "#EFF0F1" },
+      { id: "black", nameDe: "Black", nameEn: "Black", hex: "#212721" },
+      { id: "gelb", nameDe: "Gelb", nameEn: "Yellow", hex: "#F3E500" },
+      { id: "rot", nameDe: "Rot", nameEn: "Red", hex: "#C8102E" },
+      { id: "blau", nameDe: "Blau", nameEn: "Blue", hex: "#003594" },
+      { id: "gruen", nameDe: "Grün", nameEn: "Green", hex: "#009639" },
+      { id: "grau", nameDe: "Grau", nameEn: "Grey", hex: "#97999B" },
+      { id: "purple", nameDe: "Purple", nameEn: "Purple", hex: "#6A6DCD" },
+      { id: "orange", nameDe: "Orange", nameEn: "Orange", hex: "#FF7F32" },
+      { id: "pink", nameDe: "Pink", nameEn: "Pink", hex: "#FB637E" },
+      { id: "peanut", nameDe: "Peanut Brown", nameEn: "Peanut Brown", hex: "#A9754F" },
+      { id: "lime", nameDe: "Lime Green", nameEn: "Lime Green", hex: "#78D64B" },
+      { id: "himmel", nameDe: "Himmelblau", nameEn: "Sky blue", hex: "#7EC8E3" },
+      { id: "orange-t", nameDe: "Orange Transparent", nameEn: "Transparent orange", hex: "#FFB36A", look: "translucent" },
+      { id: "schwarz-g", nameDe: "Schwarz glänzend", nameEn: "Glossy black", hex: "#141414", look: "gloss" }
+    ];
+    function petgLang() {
+      return document.documentElement.lang === "en" ? "en" : "de";
+    }
+    function petgLabel(color) {
+      const name = petgLang() === "en" ? color.nameEn : color.nameDe;
+      if (name) return name;
+      return color.hex || "";
+    }
+    function setPetg(color) {
+      const fill = document.getElementById("petg-fill");
+      const label = document.getElementById("petg-label");
+      fill.style.background = color.hex;
+      label.textContent = petgLabel(color);
+      document.querySelectorAll("#petg-chips button").forEach((btn) => {
+        btn.setAttribute("aria-pressed", btn.dataset.id === color.id ? "true" : "false");
+      });
+    }
+    const PLA = [
+      { id: "tanne", nameDe: "Tannengrün", nameEn: "Fir green", hex: "#1F4D2B" },
+      { id: "marmor", nameDe: "Marmor", nameEn: "Marble", hex: "#E6E1D8", look: "marble" },
+      { id: "pla-schwarz", nameDe: "Schwarz", nameEn: "Black", hex: "#212721" },
+      { id: "pla-weiss", nameDe: "Weiß", nameEn: "White", hex: "#EFF0F1" }
+    ];
+    function setPla(color) {
+      const fill = document.getElementById("pla-fill");
+      const label = document.getElementById("pla-label");
+      fill.style.background = color.look === "marble"
+        ? "linear-gradient(115deg, #f3f0ea 0%, #d9d4cb 40%, #efece6 55%, #c5bfb4 78%, #f7f5f1 100%)"
+        : color.hex;
+      label.textContent = petgLang() === "en" ? color.nameEn : color.nameDe;
+      document.querySelectorAll("#pla-chips button").forEach((btn) => {
+        btn.setAttribute("aria-pressed", btn.dataset.id === color.id ? "true" : "false");
+      });
+    }
+    (function buildPla() {
+      const wrap = document.getElementById("pla-chips");
+      PLA.forEach((color) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.dataset.id = color.id;
+        if (color.look) btn.classList.add(color.look);
+        else btn.style.background = color.hex;
+        btn.title = color.nameDe;
+        btn.addEventListener("click", () => setPla(color));
+        wrap.appendChild(btn);
+      });
+      setPla(PLA[0]);
+    })();
+    const TPU = [
+      { id: "digitalblau", nameDe: "Digitalblau", nameEn: "Digital blue", hex: "#7ED4C9", shore: "95A" },
+      { id: "airgreen", nameDe: "Air Green Flex", nameEn: "Air Green Flex", hex: "#7A9A7E", shore: "65–82A" },
+      { id: "tpu-orange", nameDe: "Orange", nameEn: "Orange", hex: "#FF7F32", shore: "95A" }
+    ];
+    function tpuLabel(color) {
+      const name = petgLang() === "en" ? color.nameEn : color.nameDe;
+      return name + " · " + color.shore;
+    }
+    function setTpu(color) {
+      const fill = document.getElementById("tpu-fill");
+      const label = document.getElementById("tpu-label");
+      fill.style.background = color.hex;
+      label.textContent = tpuLabel(color);
+      document.querySelectorAll("#tpu-chips button").forEach((btn) => {
+        btn.setAttribute("aria-pressed", btn.dataset.id === color.id ? "true" : "false");
+      });
+    }
+    (function buildTpu() {
+      const wrap = document.getElementById("tpu-chips");
+      TPU.forEach((color) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.dataset.id = color.id;
+        btn.style.background = color.hex;
+        btn.title = tpuLabel(color);
+        btn.addEventListener("click", () => setTpu(color));
+        wrap.appendChild(btn);
+      });
+      setTpu(TPU[0]);
+    })();
+    (function buildPetg() {
+      const wrap = document.getElementById("petg-chips");
+      PETG.forEach((color) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.dataset.id = color.id;
+        if (color.look) btn.classList.add(color.look);
+        else btn.style.background = color.hex;
+        btn.title = petgLabel(color);
+        btn.addEventListener("click", () => setPetg(color));
+        wrap.appendChild(btn);
+      });
+      setPetg(PETG[0]);
+    })();
+    applyLang(TV.startLang());
+    document.querySelectorAll("[data-set-lang]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        applyLang(btn.getAttribute("data-set-lang"));
+        const id = document.querySelector("#petg-chips [aria-pressed='true']")?.dataset.id;
+        setPetg(PETG.find((c) => c.id === id) || PETG[0]);
+        const tid = document.querySelector("#tpu-chips [aria-pressed='true']")?.dataset.id;
+        setTpu(TPU.find((c) => c.id === tid) || TPU[0]);
+        const pid = document.querySelector("#pla-chips [aria-pressed='true']")?.dataset.id;
+        setPla(PLA.find((c) => c.id === pid) || PLA[0]);
+      });
+    });
+    function showTab(id) {
+      const svc = id !== "mat";
+      document.getElementById("panel-svc").hidden = !svc;
+      document.getElementById("panel-mat").hidden = svc;
+      document.getElementById("tab-svc").setAttribute("aria-selected", svc ? "true" : "false");
+      document.getElementById("tab-mat").setAttribute("aria-selected", svc ? "false" : "true");
+    }
+    document.querySelectorAll("[data-tab]").forEach((btn) => {
+      btn.addEventListener("click", () => showTab(btn.getAttribute("data-tab")));
+    });
+    if (location.hash === "#materialien" || location.hash === "#materials") showTab("mat");
+  </script>
+</body>
+</html>

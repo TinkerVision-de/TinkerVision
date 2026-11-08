@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- Automatisch erzeugt aus ../kontakt.html durch tools/build_en.py – nicht direkt bearbeiten. -->
+<html lang="en">
+<head>
+  <script>(function(){var t;try{t=localStorage.getItem("tv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – TinkerVision</title>
+  <meta name="description" content="Idea, order or question? Write to TinkerVision via the contact form or by email.">
+  <meta name="theme-color" content="#ececf1">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="preload" href="../fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/orbitron-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TinkerVision">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:title" content="Contact – TinkerVision">
+  <meta property="og:description" content="Idea, order or question? Write to TinkerVision via the contact form or by email.">
+  <meta property="og:url" content="https://tinkervision.de/en/kontakt.html">
+  <meta property="og:image" content="https://tinkervision.de/og-image-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TinkerVision – Idea becomes geometry. 3D scanning, CAD design, FEA">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://tinkervision.de/en/kontakt.html">
+  <link rel="alternate" hreflang="de" href="https://tinkervision.de/kontakt.html" data-path="../kontakt.html">
+  <link rel="alternate" hreflang="en" href="https://tinkervision.de/en/kontakt.html" data-path="kontakt.html">
+  <link rel="alternate" hreflang="x-default" href="https://tinkervision.de/kontakt.html" data-path="../kontakt.html">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <style>
+    .top {
+      width: min(560px, calc(100% - 28px));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0 0;
+    }
+    .back { color: var(--muted); text-decoration: none; font-size: 1.06rem; }
+    main {
+      width: min(560px, calc(100% - 28px));
+      margin: 14px auto 28px;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 34px 26px 26px;
+      box-shadow: 0 24px 50px var(--shadow);
+    }
+    .brand {
+      font-family: Orbitron, sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.24em;
+      font-weight: 700;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+    h1 {
+      font-family: Orbitron, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.16em;
+      margin: 0 0 6px;
+      text-align: center;
+    }
+    .lead { color: var(--muted); font-size: 1.06rem; margin: 0 0 16px; }
+    .rule {
+      width: 28px;
+      height: 2px;
+      background: var(--ink);
+      margin: 12px auto 18px;
+      opacity: .22;
+      border-radius: 2px;
+    }
+    @media (min-width: 900px) {
+      .top, main { width: min(680px, calc(100% - 48px)); }
+    }
+    label {
+      display: block;
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin: 0 0 5px;
+    }
+    input, textarea {
+      width: 100%;
+      font-family: Outfit, sans-serif;
+      font-size: 1.1rem;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 13px 14px;
+      margin-bottom: 12px;
+      background: var(--card-solid);
+      color: var(--ink);
+      outline: none;
+    }
+    textarea { min-height: 132px; resize: vertical; }
+    .actions { display: grid; gap: 8px; margin-top: 6px; }
+    .btn-send {
+      font-family: Outfit, sans-serif;
+      font-weight: 700;
+      font-size: 1.12rem;
+      border: 0;
+      border-radius: 12px;
+      padding: 14px 17px;
+      background: var(--ink);
+      color: var(--on-ink);
+      cursor: pointer;
+    }
+    .btn-mail {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      border: 1px dashed var(--line);
+      border-radius: 12px;
+      padding: 13px 17px;
+      color: var(--muted);
+    }
+    .btn-mail:hover { color: var(--ink); }
+    .sent {
+      display: none;
+      background: #e8f5ea;
+      color: #1d6b2a;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+    .sent.on { display: block; }
+    .split-rule {
+      width: 36px;
+      height: 1px;
+      background: var(--ink);
+      opacity: .22;
+      margin: 22px auto 16px;
+      border: 0;
+    }
+    .soon {
+      margin-top: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      border: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 52px;
+      padding: 0;
+      cursor: default;
+      position: relative;
+      background: linear-gradient(135deg, #25d366 0 50%, #101114 50% 100%);
+      color: #fff;
+      font-family: Outfit, sans-serif;
+      font-weight: 700;
+      font-size: 1.14rem;
+      letter-spacing: 0.02em;
+    }
+    .soon-note { color: var(--muted); font-size: 0.8rem; text-align: center; margin: 8px 0 0; }
+    .soon span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 10px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .soon img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .soon img.x-logo {
+      width: 36px;
+      height: 36px;
+    }
+    footer {
+      margin-top: auto;
+      padding: 4px 16px 28px;
+      color: var(--muted);
+      font-size: 0.75rem;
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+    }
+    html[data-theme="dark"] { --bg: #0e0f12; }
+  
+  </style>
+</head>
+<body>
+  <div class="top">
+    <a class="back" href="index.html" data-i18n="back">← Back</a>
+    <div class="tools">
+      <label class="ios-switch" title="Dark Mode">
+        <input type="checkbox" data-theme-toggle aria-label="Toggle dark mode">
+        <span class="ios-slider"></span>
+      </label>
+      <div class="lang" role="group">
+        <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <p class="brand">TinkerVision</p>
+    <h1 data-i18n="title">Contact</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="lead" data-i18n="lead">Idea, commission or question — drop a line.</p>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="sent" id="sent" data-i18n="sent">Message on its way.</p>
+    <form action="https://formsubmit.co/815695dac01bbf22a7bf22c3d9406e32" method="POST">
+      <input type="hidden" name="_subject" value="TinkerVision Kontakt">
+      <input type="hidden" name="_next" value="https://tinkervision.de/en/kontakt.html?sent=1">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
+      <label for="name" data-i18n="name">Name</label>
+      <input id="name" name="name" required>
+      <label for="email" data-i18n="email">Email</label>
+      <input id="email" name="email" type="email" required>
+      <label for="message" data-i18n="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <div class="actions">
+        <button class="btn-send" type="submit" data-i18n="send">Send</button>
+        <a class="btn-mail" href="mailto:tinkervision.de@protonmail.com" data-i18n="mailto">Email tinkervision.de@protonmail.com</a>
+      </div>
+    </form>
+    <hr class="split-rule">
+    <button class="soon" type="button" disabled aria-describedby="soon-note">
+      <span><img src="../whatsapp.png" alt="" width="28" height="28"> WhatsApp</span>
+      <span><img class="x-logo" src="../X.png" alt="" width="36" height="36"> / Former Twitter</span>
+    </button>
+    <p class="soon-note" id="soon-note" data-i18n="soon">WhatsApp and X are coming soon.</p>
+  </main>
+  <footer>
+    <span>© 2026 TinkerVision</span>
+    <a href="impressum.html" data-i18n="imprint">Imprint</a>
+    <a href="datenschutz.html" data-i18n="privacy">Privacy</a>
+    <a href="agb.html" data-i18n="agb">Terms</a>
+    <a href="widerruf.html" data-i18n="widerruf">Withdrawal</a>
+  </footer>
+  <script src="../site.js"></script>
+  <script>
+    const T = {
+      de: {
+        soon: "WhatsApp und X folgen in Kürze.",
+        back: "← Zurück",
+        title: "Kontakt",
+        lead: "Idee, Auftrag oder Frage — kurz schreiben.",
+        name: "Name",
+        email: "E-Mail",
+        message: "Nachricht",
+        send: "Absenden",
+        mailto: "Direkt an tinkervision.de@protonmail.com",
+        sent: "Nachricht unterwegs.",
+        imprint: "Impressum",
+        privacy: "Datenschutz",
+        agb: "AGB",
+        widerruf: "Widerruf"
+      },
+      en: {
+        soon: "WhatsApp and X are coming soon.",
+        back: "← Back",
+        title: "Contact",
+        lead: "Idea, commission or question — drop a line.",
+        name: "Name",
+        email: "Email",
+        message: "Message",
+        send: "Send",
+        mailto: "Email tinkervision.de@protonmail.com",
+        sent: "Message on its way.",
+        imprint: "Imprint",
+        privacy: "Privacy",
+        agb: "Terms",
+        widerruf: "Withdrawal"
+      }
+    };
+    function applyLang(lang) {
+      TV.setLang(T, lang);
+    }
+    applyLang(TV.startLang());
+    document.querySelectorAll("[data-set-lang]").forEach((btn) => {
+      btn.addEventListener("click", () => applyLang(btn.getAttribute("data-set-lang")));
+    });
+    if (new URLSearchParams(location.search).get("sent") === "1") {
+      document.getElementById("sent").classList.add("on");
+    }
+    const q = new URLSearchParams(location.search);
+    if (q.get("subject")) document.querySelector("[name=_subject]").value = q.get("subject");
+    if (q.get("message")) document.getElementById("message").value = q.get("message");
+  </script>
+</body>
+</html>

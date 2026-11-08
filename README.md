@@ -32,3 +32,10 @@ Läuft automatisch nach jedem Push; bei Fehlern wird der Lauf rot und GitHub sch
 
 `projekte.html` ist vorbereitet, aber noch ausgeblendet (`noindex`, nicht verlinkt). Zum Freischalten:
 Projekte eintragen (Anleitung als Kommentar in der Datei), `noindex`-Zeile löschen, Link auf der Startseite einkommentieren.
+
+## Lieferpakete
+
+`python3 tools/pakete_bauen.py [Zielordner]` baut zwei ZIPs:
+- `tinkervision-upload-<version>.zip` – Inhalt fürs Repo (ohne `stats.json`, die pflegt die Action)
+- `tinkervision-lokaltest-<version>.zip` – Seite unter `website/` plus Startskripte für Linux, Mac und Windows,
+  die einen lokalen Webserver starten und den Browser öffnen. Nicht ins Repo hochladen.

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!-- Automatisch erzeugt aus ../index.html durch tools/build_en.py – nicht direkt bearbeiten. -->
+<html lang="en">
+<head>
+  <script>(function(){var t;try{t=localStorage.getItem("tv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TinkerVision – CAD design, 3D scanning &amp; 3D printing</title>
+  <meta name="description" content="TinkerVision from northern Germany: 3D scanning, CAD design and FEA – from prototype to custom build. Digital models on Cults3D and Printables.">
+  <meta name="theme-color" content="#ececf1">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="preload" href="../fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/orbitron-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TinkerVision">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:title" content="TinkerVision – Idea becomes geometry">
+  <meta property="og:description" content="TinkerVision from northern Germany: 3D scanning, CAD design and FEA – from prototype to custom build. Digital models on Cults3D and Printables.">
+  <meta property="og:url" content="https://tinkervision.de/en/">
+  <meta property="og:image" content="https://tinkervision.de/og-image-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TinkerVision – Idea becomes geometry. 3D scanning, CAD design, FEA">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://tinkervision.de/en/">
+  <link rel="alternate" hreflang="de" href="https://tinkervision.de/" data-path="../index.html">
+  <link rel="alternate" hreflang="en" href="https://tinkervision.de/en/" data-path="index.html">
+  <link rel="alternate" hreflang="x-default" href="https://tinkervision.de/" data-path="../index.html">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://tinkervision.de/#business",
+    "name": "TinkerVision",
+    "slogan": "Idee wird Geometrie.",
+    "description": "3D-Scan, CAD-Konstruktion und FEM-Analyse – vom Prototypen bis zur Sonderanfertigung.",
+    "url": "https://tinkervision.de/",
+    "logo": "https://tinkervision.de/emblem.png",
+    "image": "https://tinkervision.de/emblem.png",
+    "email": "tinkervision.de@protonmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "An der Brigg 8",
+      "postalCode": "26736",
+      "addressLocality": "Krummhörn",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://cults3d.com/@TinkerVision",
+      "https://www.printables.com/@TinkerVision_2450000"
+    ],
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Ostfriesland" },
+      { "@type": "Country", "name": "Deutschland" }
+    ],
+    "knowsAbout": ["CAD-Konstruktion", "3D-Scan", "FEM-Analyse", "3D-Druck", "Prototypenbau"]
+  }
+  </script>
+  <style>
+    :root { --cults: #6b2d91; --printables: #fa6831; --contact: #101114; --services: #2f4a63; --custom: #822ef5; }
+    html[data-theme="dark"] { --contact: #f3f4f8; --services: #8aa0b8; }
+    .top {
+      width: min(520px, calc(100% - 28px));
+      display: flex;
+      justify-content: flex-end;
+      padding: 16px 0 0;
+    }
+    .lang {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      overflow: hidden;
+      background: var(--card-solid);
+      backdrop-filter: blur(8px);
+    }
+    main {
+      width: min(520px, calc(100% - 28px));
+      margin: 14px auto 28px;
+      text-align: center;
+      background: var(--card);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 36px 22px 22px;
+      box-shadow:
+        0 1px 0 var(--highlight) inset,
+        0 24px 50px var(--shadow);
+    }
+    .logo {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 18px;
+      filter: drop-shadow(0 10px 20px var(--shadow));
+    }
+    h1 {
+      font-family: Orbitron, sans-serif;
+      font-size: 1.18rem;
+      letter-spacing: 0.24em;
+      margin: 0 0 8px;
+      font-weight: 700;
+    }
+    .tag {
+      color: var(--muted);
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      margin: 0;
+    }
+    .rule {
+      width: 28px;
+      height: 2px;
+      background: var(--ink);
+      margin: 28px auto 22px;
+      opacity: .22;
+      border-radius: 2px;
+    }
+    .line {
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      margin: 0;
+      text-transform: none;
+    }
+    .line2 {
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      margin: 8px 0 36px;
+    }
+    .shops { display: grid; gap: 10px; }
+    a.shop {
+      display: grid;
+      grid-template-columns: 48px 1fr 16px;
+      gap: 12px;
+      align-items: center;
+      text-align: left;
+      padding: 12px 14px;
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      text-decoration: none;
+      color: var(--ink);
+      box-shadow: 0 6px 16px rgba(16,17,20,.04);
+      transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+    }
+    a.shop:hover {
+      transform: translateY(-2px);
+      border-color: #d0d1d8;
+      box-shadow: 0 14px 28px var(--shadow);
+    }
+    .cults { border-left: 3px solid var(--cults); }
+    .printables { border-left: 3px solid var(--printables); }
+    .services-btn { border-left: 3px solid var(--services); }
+    .contact-btn { border-left: 3px solid var(--contact); }
+    .custom-btn { border-left: 3px solid var(--custom); }
+    .projects-btn { border-left: 3px solid var(--services); }
+    .mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+    }
+    .mark svg, .mark img { width: 26px; height: 26px; fill: currentColor; object-fit: contain; }
+    .cults .mark { background: var(--cults); }
+    .printables .mark { background: var(--printables); }
+    .services-btn .mark { background: var(--services); }
+    .contact-btn .mark { background: var(--contact); color: var(--on-ink); }
+    .custom-btn .mark { background: var(--custom); }
+    .projects-btn .mark { background: var(--services); }
+    .shop strong {
+      display: block;
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+    .shop span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.76rem;
+      margin-top: 2px;
+    }
+    .ext { color: #c4c5cc; }
+    footer {
+      margin-top: auto;
+      padding: 24px 16px 32px;
+      color: var(--muted);
+      font-size: 0.75rem;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .stats div {
+      background: var(--card-solid);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 10px 12px;
+      text-align: center;
+    }
+    .stats strong {
+      font-family: Orbitron, sans-serif;
+      font-size: 1.15rem;
+      letter-spacing: 0.06em;
+    }
+    .stats em {
+      font-style: normal;
+      font-family: Orbitron, sans-serif;
+      font-size: 1.15rem;
+    }
+    .stats p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+    }
+    @media (min-width: 900px) {
+      .top, main { width: min(640px, calc(100% - 48px)); }
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="tools">
+      <label class="ios-switch" title="Dark Mode">
+        <input type="checkbox" data-theme-toggle aria-label="Toggle dark mode">
+        <span class="ios-slider"></span>
+      </label>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <img class="logo" src="../logo.webp" alt="TinkerVision" width="140" height="140" fetchpriority="high">
+    <h1>TinkerVision</h1>
+    <p class="tag" data-i18n="slogan">Ideas become geometry.</p>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="line" data-i18n="line">3D scan · CAD design · FEA</p>
+    <p class="line2" data-i18n="line2">From prototype to custom one-off</p>
+    <nav class="shops" aria-label="Shops">
+      <a class="shop services-btn" href="leistungen.html">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 3.5 2.2 2.2L20 14l-1.4-1.4-3.4 3.4-1-1L13 16.5z"/></svg>
+        </div>
+        <div>
+          <strong data-i18n="services">Services</strong>
+          <span data-i18n="servicesSub">Analysis, development, production</span>
+        </div>
+        <svg class="ext" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M10 6l6 6-6 6-1.4-1.4L13.2 12 8.6 7.4 10 6z"/></svg>
+      </a>
+      <a class="shop contact-btn" href="kontakt.html">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3V5zm2 2v.2l7 4.6 7-4.6V7H5zm14 10V10.1l-7 4.6-7-4.6V17h14z"/></svg>
+        </div>
+        <div>
+          <strong data-i18n="contact">Contact</strong>
+          <span data-i18n="contactSub">Find the best way to get in touch</span>
+        </div>
+        <svg class="ext" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M10 6l6 6-6 6-1.4-1.4L13.2 12 8.6 7.4 10 6z"/></svg>
+      </a>
+      <a class="shop custom-btn" href="spezial.html">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.2 6.2L20.5 10 14.2 12.2 12 18.5 9.8 12.2 3.5 10l6.3-1.8L12 2zm7 12l1.1 3.1L23 18.2l-2.9 1.1L19 22.4l-1.1-3.1L15 18.2l2.9-1.1L19 14zM6 14l.9 2.4L9.3 17.3 6.9 18.2 6 20.6l-.9-2.4L2.7 17.3l2.4-.9L6 14z"/></svg>
+        </div>
+        <div>
+          <strong data-i18n="custom">Custom products</strong>
+          <span data-i18n="customSub">Configurable one-offs and small runs</span>
+        </div>
+        <svg class="ext" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M10 6l6 6-6 6-1.4-1.4L13.2 12 8.6 7.4 10 6z"/></svg>
+      </a>
+      <!-- PROJEKTE: einkommentieren (diese und die schließende Kommentarzeile löschen), sobald projekte.html befüllt ist.
+      <a class="shop projects-btn" href="projekte.html">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4V5zm2 2v8.6l3.5-3.5 2.5 2.5 4-4 2 2V7H6zm3 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>
+        </div>
+        <div>
+          <strong data-i18n="projects">Projects</strong>
+          <span data-i18n="projectsSub">References from design and printing</span>
+        </div>
+        <svg class="ext" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M10 6l6 6-6 6-1.4-1.4L13.2 12 8.6 7.4 10 6z"/></svg>
+      </a>
+      -->
+      <a class="shop cults" href="https://cults3d.com/@TinkerVision" rel="noopener noreferrer" target="_blank">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5zm0 2.2 6.2 3.45v.2L12 11.3 5.8 7.85v-.2L12 4.2zM5 9.2l6 3.35V19l-6-3.33V9.2zm8 9.15v-6.45L19 9.2v6.47L13 18.35z"/></svg>
+        </div>
+        <div>
+          <strong>Cults3D</strong>
+          <span data-i18n="cults">Public premium portfolio</span>
+        </div>
+        <svg class="ext" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </a>
+      <a class="shop printables" href="https://www.printables.com/@TinkerVision_2450000" rel="noopener noreferrer" target="_blank">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 3h16v4H4V3zm2 6h12l1 12H5L6 9zm4 2v8h4v-8h-4z"/></svg>
+        </div>
+        <div>
+          <strong>Printables</strong>
+          <span data-i18n="printables">Public freemium portfolio</span>
+        </div>
+        <svg class="ext" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </a>
+    </nav>
+    <div class="stats">
+      <div>
+        <strong id="stat-dl">495</strong><em>+</em>
+        <p data-i18n="statDl">Digital product downloads</p>
+      </div>
+      <div>
+        <strong id="stat-cad">200</strong><em>+</em>
+        <p data-i18n="statCad">Designs completed</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>© 2026 TinkerVision</span>
+    <a href="impressum.html" data-i18n="imprint">Imprint</a>
+    <a href="datenschutz.html" data-i18n="privacy">Privacy</a>
+    <a href="agb.html" data-i18n="agb">Terms</a>
+    <a href="widerruf.html" data-i18n="widerruf">Withdrawal</a>
+  </footer>
+  <script src="../site.js"></script>
+  <script>
+    const T = {
+      de: {
+        projects: "Projekte", projectsSub: "Referenzen aus Konstruktion und Druck",
+        slogan: "Idee wird Geometrie.",
+        line: "3D-Scan · CAD-Konstruktion · FEM-Analyse",
+        line2: "Vom Prototypen bis zur Sonderanfertigung",
+        cults: "Öffentliches Premium-Portfolio",
+        printables: "Öffentliches Freemium-Portfolio",
+        imprint: "Impressum",
+        agb: "AGB",
+        widerruf: "Widerruf",
+        privacy: "Datenschutz",
+        contact: "Kontakt",
+        contactSub: "Den besten Weg zur Kontaktaufnahme finden",
+        services: "Leistungen",
+        servicesSub: "Analyse, Entwicklung, Produktion",
+        custom: "Sonderanfertigungen",
+        customSub: "Konfigurierbare Einzelstücke und Kleinserien",
+        statDl: "Downloads digitaler Produkte",
+        statCad: "Konstruktionen erstellt"
+      },
+      en: {
+        projects: "Projects", projectsSub: "References from design and printing",
+        slogan: "Ideas become geometry.",
+        line: "3D scan · CAD design · FEA",
+        line2: "From prototype to custom one-off",
+        cults: "Public premium portfolio",
+        printables: "Public freemium portfolio",
+        imprint: "Imprint",
+        agb: "Terms",
+        widerruf: "Withdrawal",
+        privacy: "Privacy",
+        contact: "Contact",
+        contactSub: "Find the best way to get in touch",
+        services: "Services",
+        servicesSub: "Analysis, development, production",
+        custom: "Custom products",
+        customSub: "Configurable one-offs and small runs",
+        statDl: "Digital product downloads",
+        statCad: "Designs completed"
+      }
+    };
+    function applyLang(lang) {
+      TV.setLang(T, lang);
+    }
+    applyLang(TV.startLang());
+    document.querySelectorAll("[data-set-lang]").forEach((btn) => {
+      btn.addEventListener("click", () => applyLang(btn.getAttribute("data-set-lang")));
+    });
+
+    const calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function countUp(el, to, ms) {
+      if (calm) { el.textContent = String(to); return; }
+      const start = performance.now();
+      function tick(now) {
+        const t = Math.min(1, (now - start) / ms);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = String(Math.round(to * eased));
+        if (t < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+    // Startwerte stehen im HTML, damit ohne JS und für Suchmaschinen eine Zahl da ist.
+    // Aktuelle Werte kommen aus stats.json (wird täglich per GitHub Action aktualisiert).
+    fetch("../stats.json", { cache: "no-store" })
+      .then((r) => r.ok ? r.json() : null)
+      .then((stats) => {
+        if (!stats) return;
+        if (Number.isFinite(stats.total)) countUp(document.getElementById("stat-dl"), stats.total, 1500);
+        if (Number.isFinite(stats.cad)) countUp(document.getElementById("stat-cad"), stats.cad, 1500);
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
