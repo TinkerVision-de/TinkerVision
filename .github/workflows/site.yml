@@ -1,0 +1,35 @@
+name: site check
+# Bei jeder Änderung an der Website:
+# 1. englische Seiten unter en/ und die Sitemap neu erzeugen (tools/build_en.py) und mitcommitten
+# 2. die ganze Seite prüfen (tools/check_site.py) – bei Fehlern wird der Lauf rot und GitHub schickt eine Mail
+on:
+  push:
+    branches: [website]
+    paths-ignore:
+      - stats.json
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: site-check
+  cancel-in-progress: false
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Englische Seiten und Sitemap erzeugen
+        run: python3 tools/build_en.py
+      - name: Erzeugte Dateien committen
+        run: |
+          git config user.name "tinkervision-bot"
+          git config user.email "actions@github.com"
+          git add -A en sitemap.xml *.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Englische Seiten und Sitemap aktualisieren"
+            git pull --rebase
+            git push
+          fi
+      - name: Website prüfen
+        run: python3 tools/check_site.py
