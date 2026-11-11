@@ -31,6 +31,7 @@
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <style>
     :root { --accent: #822ef5; }
+    html[data-theme="dark"] { --accent: #b48cff; }
     body { font-family:Outfit,system-ui,sans-serif; color:var(--ink); min-height:100vh; display:flex; flex-direction:column; align-items:center; background:var(--bg0); background-image:radial-gradient(ellipse 70% 45% at 50% 0%, var(--glow) 0%, transparent 70%), linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size:auto,28px 28px,28px 28px; }
     .top { width:min(560px, calc(100% - 28px)); display:flex; justify-content:space-between; align-items:center; padding:16px 0 0; }
     .back { color:var(--muted); text-decoration:none; font-size:.88rem; }
@@ -43,7 +44,7 @@
     .rule { width:28px; height:2px; background:var(--ink); margin:14px auto 18px; opacity:.22; border-radius:2px; }
     .lead { color:var(--muted); text-align:center; margin:0 0 14px; font-size:.95rem; }
     .az { position:fixed; right:8px; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; gap:2px; z-index:2; }
-    .az a { font-size:.68rem; letter-spacing:.04em; color:var(--muted); text-decoration:none; text-align:center; width:16px; }
+    .az a { font-size:.68rem; letter-spacing:.04em; color:var(--muted); text-decoration:none; display:flex; align-items:center; justify-content:center; width:24px; height:24px; }
     .az a.on { color:var(--accent); font-weight:700; }
     a.item { display:grid; grid-template-columns:72px 1fr 16px; gap:14px; align-items:center; text-decoration:none; color:var(--ink); background:var(--card-solid); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:16px; padding:14px; }
     a.item:hover { transform:translateY(-2px); }
