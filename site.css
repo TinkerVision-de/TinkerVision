@@ -17,7 +17,7 @@
 :root {
   color-scheme: light;
   --ink: #101114;
-  --muted: #6d6f78;
+  --muted: #5f616a;
   --line: #e4e5ea;
   --bg0: #ececf1;
   --card: rgba(255,255,255,.78);
@@ -99,3 +99,7 @@ footer a:hover { color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+/* Tippflächen mindestens 24 × 24 px (WCAG 2.5.8) */
+.back { display: inline-flex; align-items: center; min-height: 24px; }
+footer a { display: inline-flex; align-items: center; min-height: 24px; }
