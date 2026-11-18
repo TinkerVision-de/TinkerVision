@@ -62,6 +62,7 @@
     });
     var note = document.getElementById("en-note");
     if (note) note.hidden = lang !== "en";
+    revealMail();
     return lang;
   }
 
@@ -89,9 +90,28 @@
     }
   })();
 
-  window.TV = { store: store, applyTheme: applyTheme, startLang: startLang, setLang: setLang };
+  // Mailadresse steht im Quelltext nur als "name [at] domain", damit Spam-Bots sie nicht einsammeln.
+  // Der Browser setzt sie hier zusammen; Links mit data-mail-link werden zu mailto:-Links.
+  var MAIL = ["tinkervision.de", "protonmail.com"].join("@");
+  var MAIL_SAFE = /tinkervision\.de \[at\] protonmail\.com/g;
+  function revealMail(root) {
+    root = root || document.body;
+    if (!root) return;
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+    var node;
+    while ((node = walker.nextNode())) {
+      var parent = node.parentNode && node.parentNode.nodeName;
+      if (parent === "SCRIPT" || parent === "STYLE") continue;
+      if (MAIL_SAFE.test(node.nodeValue)) node.nodeValue = node.nodeValue.replace(MAIL_SAFE, MAIL);
+      MAIL_SAFE.lastIndex = 0;
+    }
+    root.querySelectorAll("a[data-mail-link]").forEach(function (a) { a.setAttribute("href", "mailto:" + MAIL); });
+  }
+
+  window.TV = { store: store, applyTheme: applyTheme, startLang: startLang, setLang: setLang, revealMail: revealMail };
 
   applyTheme(savedTheme() || systemTheme(), false);
+  revealMail();
   document.querySelectorAll("[data-theme-toggle]").forEach(function (el) {
     el.addEventListener("change", function () { applyTheme(el.checked ? "dark" : "light", true); });
   });
